@@ -16,7 +16,7 @@
 | [run_graph_agent.py](<run_graph_agent.py>) | 结构分析、知识图谱及其Agent对照 |
 | [DSH交互插件](<dsh-plugin/packages/gb1/README.md>) | 自定义轮数与参数，执行单次或批量实验，暂停恢复并导出CSV |
 
-主要工具各负责一个明确任务：pandas/NumPy处理数据，scikit-learn训练预测器，OpenAI SDK调用LLM，Pydantic检查输出；Biopython分析结构，NetworkX存储和查询小型图谱。记录使用CSV/JSON/JSONL和joblib，展示使用Matplotlib与python-docx。技术依据见[实施方案](<加分项实施方案.md>)。
+主要工具各负责一个明确任务：pandas/NumPy处理数据，scikit-learn训练预测器，OpenAI SDK调用LLM，Pydantic检查输出；Biopython分析结构，NetworkX存储和查询小型图谱。记录使用CSV/JSON/JSONL和joblib，展示使用Matplotlib与python-docx。技术依据见[实施方案](<扩展实验实施方案.md>)。
 
 ## 架构图
 
