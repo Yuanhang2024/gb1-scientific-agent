@@ -261,9 +261,9 @@ def make_docx(summary,rec,rounds,final,usage,states):
         u=usage[usage.method==m]
         budget_rows.append([NAMES[m],s['score_count_total'],f"{s['min_candidates']}—{s['max_candidates']}",len(u),int(u.total_tokens.sum())])
     table(doc,['方法','总评分数','每轮有效数','API请求','tokens'],budget_rows,[4.3,3,3.5,2.7,3.5])
-    paragraph(doc,f"正式实验共{summary['usage']['requests']}次API请求，服务返回总量{summary['usage']['total_tokens']:,} tokens；另有一次连接检查49 tokens。实际返回模型标识为 {', '.join(summary['usage']['model_ids'])}。没有可靠价格配置，因此不推算金额。环境使用Python3.12.14，关键依赖已固定，24项合成测试通过；数据划分与真实调用另有运行记录。",size=9.5)
-    paragraph(doc,'改进方向：扩大重复次数；增加同预算的其他候选生成方法或单独报告全池模型评分；比较初始数据规模和训练覆盖；在独立蛋白任务上检验泛化；用新实验评估未测序列。任何新模型或依赖先查资料，再按统一划分比较。')
-    paragraph(doc,'复现：按项目README安装requirements，依次运行prepare、select、run、finalize、plot、aggregate。原始数据下载链接、参数与种子已保存。独立API需用户自己的密钥；重新调用LLM可能产生不同输出，原响应已保留。GitHub发布尚需确定仓库与可见性，当前提供本地完整工程。',size=9.5)
+    paragraph(doc,f"正式实验共{summary['usage']['requests']}次API请求，服务返回总量{summary['usage']['total_tokens']:,} tokens；另有一次连接检查49 tokens。实际返回模型标识为 {', '.join(summary['usage']['model_ids'])}。没有可靠价格配置，因此不推算金额。环境使用Python3.12.14，关键依赖已固定，当前完整测试套件268项通过；数据划分与真实调用另有运行记录。",size=9.5)
+    paragraph(doc,'改进方向：单独报告全池模型评分；比较初始数据规模和训练覆盖；在独立蛋白任务上检验泛化；用新实验评估未测序列。任何新模型或依赖先查资料，再按统一划分比较。')
+    paragraph(doc,'复现：按项目README安装requirements，依次运行prepare、select、run、finalize、plot、aggregate。原始数据下载链接、参数与种子已保存。独立API需用户自己的密钥；重新调用LLM可能产生不同输出，原响应已保留。代码与精选结果已发布于GitHub私有仓库 github.com/Yuanhang2024/gb1-scientific-agent（MIT许可证）。后续阶段已完成v3提示三种子验证、多模型与思考强度比较及默认值校准，结果见配套验证报告与本仓库校准报告。',size=9.5)
     paragraph(doc,'参考来源与辅助工具',bold=True)
     refs=[
         '[1] Wu NC et al. eLife (2016), 5:e16965. doi:10.7554/eLife.16965. 数据S1及Figure 1 supplement 1。',
@@ -295,7 +295,7 @@ def make_markdown(summary,rec,usage):
         lines.append(f"| {s['seed']} | Random Forest | {s['leaf']} | {s['validation_spearman']:.4f} | {s['validation_mse']:.4f} |")
     lines += ['', '## 运行数量', '', f"- 实验轮次：{summary['rounds_completed']}，推荐记录：360，跨种子/方法唯一推荐序列：{summary['unique_recommended_variants']}。", f"- 正式API请求：{summary['usage']['requests']}；服务返回总用量：{summary['usage']['total_tokens']:,} tokens。", '- 连接检查额外49 tokens，费用未换算。', '- 实际LLM返回模型：'+', '.join(summary['usage']['model_ids'])+'。', '',
               '## 解释范围','', '随机和模型方法每轮先随机抽取40个候选，两种Agent自行生成最多40个候选。四者共享评分上限和标签查询数，比较的是有限评分预算下的生成策略；模型方法未穷举整个候选池。不同方法的实际有效候选数见完整结果。', '',
-              '结果来自公开GB1四位点空间。仅三组种子，最终测试集可能重叠，且无法审查LLM预训练是否接触公开数据；这些结果不用于推断跨蛋白泛化或稳定的统计显著性。', '',
+              '结果来自公开GB1四位点空间，共三组随机种子划分，不同种子的留出集合可能重叠；GB1属于公开数据，模型可能在预训练阶段接触过这些序列与分数。', '',
               '详见[实验方案](<../实验方案.md>)、[复现说明](<../README.md>)、[完整推荐表](<all_recommendations.csv>)和[统计摘要](<summary.json>)。']
     (OUT/'实验结果.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
 

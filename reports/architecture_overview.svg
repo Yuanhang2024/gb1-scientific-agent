@@ -55,7 +55,7 @@
   <text x="1032" y="163" text-anchor="middle" font-size="11" fill="#2d3748">最终测试集评估</text>
   <line x1="948" y1="171" x2="1116" y2="171" stroke="#D0D8E0" stroke-width="0.4"/>
   <text x="1032" y="187" text-anchor="middle" font-size="11" fill="#2d3748">失败案例分析</text>
-  <text x="1032" y="204" text-anchor="middle" font-size="11" fill="#2d3748">消融与加分实验</text>
+  <text x="1032" y="204" text-anchor="middle" font-size="11" fill="#2d3748">消融与扩展实验</text>
   <text x="1032" y="221" text-anchor="middle" font-size="11" fill="#2d3748">三份 PDF 报告</text>
   <line x1="222" y1="187" x2="244" y2="187" stroke="#4A5568" stroke-width="1" marker-end="url(#a)"/>
   <line x1="450" y1="187" x2="472" y2="187" stroke="#4A5568" stroke-width="1" marker-end="url(#a)"/>

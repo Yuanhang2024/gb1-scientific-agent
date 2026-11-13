@@ -165,7 +165,7 @@ def document(result,records,pairs,arms,test_count):
         ['消融 withheld',int(by_condition.loc['withheld','requests']),f"{int(by_condition.loc['withheld','total_tokens']):,}"],
         ['本阶段合计',result['current_stage_usage']['requests'],f"{result['current_stage_usage']['tokens']:,}"]],[8,3.5,5.5])
     paragraph(doc,f"本阶段预先说明的请求上限为36次；此前v1/v2与v3种子11属于已完成阶段，不计入本表。未提供可靠价格配置，故不换算金额。完整离线测试{test_count}项通过；真实请求、候选来源、数据范围和配对条件另行核查。",size=9.5)
-    paragraph(doc,'复现与交付：项目README记录依赖、数据获取和命令；本阶段独立入口ablate_feedback.py提供prepare/run/compare。所有提示、请求和原始响应保留，旧结果未覆盖。API重跑可能产生不同输出；GitHub仓库尚未发布。本报告附统计摘要、推荐CSV及paired_results.csv。',size=9.5)
+    paragraph(doc,'复现与交付：项目README记录依赖、数据获取和命令；本阶段独立入口ablate_feedback.py提供prepare/run/compare。所有提示、请求和原始响应保留，旧结果未覆盖。API重跑可能产生不同输出；代码与精选结果已发布于GitHub私有仓库。本报告附统计摘要、推荐CSV及paired_results.csv。',size=9.5)
     paragraph(doc,'参考与使用说明',bold=True)
     refs=[
         '[1] Wu NC et al. eLife (2016), 5:e16965. doi:10.7554/eLife.16965；S1与实际模板图。',

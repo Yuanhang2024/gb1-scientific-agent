@@ -1,13 +1,13 @@
-# 加分扩展：运行与结果
+# 扩展实验：运行与结果
 
-本目录提供题目第1、2、3、4、5、7项加分内容。第1项采用主动学习，第4项采用结构信息，第7项按要求提供对接讨论。交互式Demo由[DSH插件](<../dsh-plugin/packages/gb1/README.md>)提供。
+本目录提供主动学习、不确定性估计、突变数量比较、结构信息、知识图谱和自动化平台对接讨论六项扩展内容。主动学习采用采集策略比较路线，结构信息采用参考结构特征路线。交互式Demo由[DSH插件](<../dsh-plugin/packages/gb1/README.md>)提供。
 
 ## 结果入口
 
-- [5页加分报告](<../reports/bonus/GB1加分项实验报告.pdf>)及[可编辑版本](<../reports/bonus/GB1加分项实验报告.docx>)
+- [5页扩展实验报告](<../reports/bonus/GB1扩展实验报告.pdf>)及[可编辑版本](<../reports/bonus/GB1扩展实验报告.docx>)
 - [数值摘要](<../reports/bonus/summary.json>)、[1,080条本地实验推荐](<../reports/bonus/learning_recommendations.csv>)
 - [结构与图谱Agent配对结果](<../reports/bonus/graph_agent_pairs.csv>)
-- [实施方案与文献依据](<../加分项实施方案.md>)
+- [实施方案与文献依据](<../扩展实验实施方案.md>)
 - [自动化实验平台对接讨论](<../自动化实验平台对接讨论.md>)
 
 ## 依赖

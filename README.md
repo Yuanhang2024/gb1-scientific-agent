@@ -222,12 +222,12 @@ v3三种子推荐均值为：基础Agent `4.060 ± 0.288`，知识增强Agent `3
 
 若只复算现有统计，可对 `results/feedback-ablation` 执行 `compare`，不调用模型。生成本阶段文档使用[build_validation_report.py](<build_validation_report.py>)，读取完成的结果；原始首轮报告继续保留。
 
-## 除Demo外的六项加分扩展
+## 六项扩展实验
 
 已完成主动学习、不确定性估计、单/双/多点比较、结构信息、可查询知识图谱和自动化平台对接讨论。具体运行命令、真实结果及限制见[bonus运行说明](<bonus/README.md>)。
 
-- [5页加分项实验报告](<reports/bonus/GB1加分项实验报告.pdf>)
-- [实施方案与公开来源](<加分项实施方案.md>)
+- [5页扩展实验报告](<reports/bonus/GB1扩展实验报告.pdf>)
+- [实施方案与公开来源](<扩展实验实施方案.md>)
 - [自动化实验平台对接讨论](<自动化实验平台对接讨论.md>)
 - [固定扩展依赖](<requirements-bonus.txt>)与[环境记录](<environment-bonus.json>)
 
@@ -241,4 +241,4 @@ mean_plus_std的推荐均值为3.4787，greedy为3.4194；随机留出校准覆�
 
 本项目使用[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)组织AI辅助开发、任务协作、模型调用与实验运行，并将其列入[贡献者说明](<CONTRIBUTORS.md>)。维护者负责研究设计、结果检查与代码维护。各阶段使用的AI模型、实际模型标识和tokens以相应报告及运行记录为准；当前工作台推荐配置为GPT-6.1 Sol / xhigh。
 
-本仓库地址：<https://github.com/Yuanhang2024/gb1-scientific-agent>（私有）。提交范围经过审查，排除了 `.env`、虚拟环境、隐藏评估标签和完整运行记录；报告通过引用原始来源说明数据获取方式。代码采用 MIT 许可证（见 [LICENSE](<LICENSE>)）；GB1 数据遵循原论文的 CC BY 4.0 归属要求。
+GitHub 发布由用户指定的仓库与可见性决定。公开前检查提交范围，排除 `.env`、虚拟环境和隐藏评估标签；报告通过引用原始来源说明数据获取方式。

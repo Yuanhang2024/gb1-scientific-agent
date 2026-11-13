@@ -1,4 +1,4 @@
-# 加分报告生成器：汇总主动学习、区间评价、结构和图谱结果，不执行新的实验。
+# 扩展实验报告生成器：汇总主动学习、区间评价、结构和图谱结果，不执行新的实验。
 """Build the bonus-task report from completed CPU and real API records only.
 
 Run from the project directory after both study summaries are complete:
@@ -145,16 +145,16 @@ def make_doc(result,structural,tests):
     normal._element.get_or_add_rPr().get_or_add_rFonts().set(qn('w:eastAsia'),FONT)
     normal.paragraph_format.line_spacing=1.12;normal.paragraph_format.space_after=Pt(5)
     h=sec.header.paragraphs[0];h.alignment=WD_ALIGN_PARAGRAPH.RIGHT
-    font(h.add_run('GB1 科学智能体 · 加分项实验 · 2026-11-10'),8,color='607080')
+    font(h.add_run('GB1 科学智能体 · 扩展实验 · 2026-11-10'),8,color='607080')
     footer=sec.footer.paragraphs[0];footer.alignment=WD_ALIGN_PARAGRAPH.CENTER
-    font(footer.add_run('加分实验报告  ·  '),8)
+    font(footer.add_run('扩展实验报告  ·  '),8)
     field=OxmlElement('w:fldSimple');field.set(qn('w:instr'),'PAGE');footer._p.append(field)
-    doc.core_properties.title='GB1加分项实验：主动学习、不确定性、结构与知识图谱'
+    doc.core_properties.title='GB1扩展实验：主动学习、不确定性、结构与知识图谱'
 
     heading(doc,'1  目标、实现范围与实验设计')
-    paragraph(doc,'GB1科学智能体加分项实验报告',bold=True,size=15)
-    paragraph(doc,'本阶段完成题目第1、2、3、4、5、7项：主动学习、不确定性估计、突变数量比较、结构信息、知识图谱和自动化平台对接讨论。第1项选择主动学习路线，第4项选择结构信息路线；交互式Demo不在范围内。没有开展真实湿实验，也没有训练大型蛋白质模型。')
-    table(doc,['加分项','实际实现与检查'],[
+    paragraph(doc,'GB1科学智能体扩展实验报告',bold=True,size=15)
+    paragraph(doc,'本阶段完成六项扩展内容：主动学习、不确定性估计、突变数量比较、结构信息、知识图谱和自动化平台对接讨论。主动学习选择采集策略比较路线，结构信息选择参考结构特征路线；交互式Demo由后续完成的DSH插件提供，不在本阶段范围内。没有开展真实湿实验，也没有训练大型蛋白质模型。')
+    table(doc,['扩展内容','实际实现与检查'],[
         ['主动学习','random、greedy、std_only、mean_plus_std，选后反馈、各臂独立重训'],
         ['不确定性','100棵树预测分歧；独立绝对/尺度残差校准；覆盖率与宽度'],
         ['突变数量','HD1、2、3、4各40候选，随机与主动策略同预算比较'],
@@ -196,8 +196,8 @@ def make_doc(result,structural,tests):
     heading(doc,'5  平台对接、完成情况与限制',page=True)
     paragraph(doc,'真实平台对接按软件职责讨论：候选检查 → 人工审核批次 → 适配器提交 → 保存执行ID → 查询状态 → 导入原始测量 → 单位/映射/质量检查 → 接受结果 → 更新已知数据。SiLA 2提供Feature/Command/Property及Observable Command执行UUID；Opentrons提供运行、状态和数据文件API，具体测量能力依设备模块与协议。[7,8]')
     paragraph(doc,'本项目需要维护experiment/batch/operation ID、variant与sample映射、协议及接口版本、原始值和单位、QC状态、fitness归一化版本。提交超时先核对外部执行状态，不能盲重发；仪器失败不记为蛋白质fitness为0。只有被接受的结果用于训练。完整讨论已交付，未连接设备或执行湿实验。')
-    paragraph(doc,'六项加分内容完成状态',bold=True)
-    paragraph(doc,'主动选样已运行；不确定性已校准和评估；单/双/三/四点已对照；参考结构特征已计算并进入Agent知识；图谱已保存、查询和实际接入；自动化平台讨论已完成。交互式Demo按要求不制作。')
+    paragraph(doc,'六项扩展内容完成状态',bold=True)
+    paragraph(doc,'主动选样已运行；不确定性已校准和评估；单/双/三/四点已对照；参考结构特征已计算并进入Agent知识；图谱已保存、查询和实际接入；自动化平台讨论已完成。交互式Demo由后续完成的DSH插件提供（当前版本0.5.0，支持一键准备运行、批量比较与暂停恢复）。')
     paragraph(doc,f"本地CPU实验108轮、1,080条推荐不调用LLM。结构图谱对照实际{result['graph']['requests']}次API请求、{result['graph']['tokens']:,} tokens，未超过12次上限；模型请求/返回标识为gpt-6-luna。完整离线测试{tests}项通过，真实输入和结果另有独立核查。",size=9.5)
     paragraph(doc,'局限与下一步研究：仅一个公开蛋白及三种子；自适应选样覆盖没有普通随机留出保证；HD样本库大小及来源不等同；结构为孤立WT参照且pos2与实验模板不同；图增强增加上下文和知识，不能单独证明图格式贡献。所有结论以本次记录为准，不预设新方法胜出。',size=9.5)
     paragraph(doc,'复现：requirements-bonus保留原依赖并增加Biopython/NetworkX；run_bonus.py负责prepare/run/summarize，run_graph_agent.py负责prepare/run/compare。配置、模型、选前分数与区间、选后反馈、图JSON、查询和响应均保存，旧结果不覆盖。',size=9)
@@ -214,7 +214,7 @@ def make_doc(result,structural,tests):
     ]
     for text in refs:paragraph(doc,text,size=8)
     paragraph(doc,'资料核查由GPT-6 Luna辅助，后端由GPT-6.1 Sol辅助，主代理负责方案、审查和文稿。文献链接、数据用途与模型辅助方式在实施方案及平台讨论中详细记录。',size=8)
-    path=OUT/'GB1加分项实验报告.docx';doc.save(path)
+    path=OUT/'GB1扩展实验报告.docx';doc.save(path)
     check=Document(path)
     text='\n'.join(p.text for p in check.paragraphs)
     for required in ['不确定性','图谱','SiLA','1,080','Demo']:
