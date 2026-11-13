@@ -4,13 +4,26 @@
 
 ## 一键安装 DSH 插件
 
-本仓库自带 DSH（DeepSeek Harness 0.2.2-rc.1）交互插件。克隆仓库后在根目录执行：
+本仓库自带 DSH（DeepSeek Harness 0.2.2-rc.1）交互插件。使用官方 `dsh plugin add` 命令安装：
+
+```powershell
+git clone https://github.com/Yuanhang2024/gb1-scientific-agent.git
+Set-Location gb1-scientific-agent\dsh-plugin
+pnpm install
+node scripts/build.mjs
+dsh plugin --profile gb1 add ./packages/gb1
+dsh --profile gb1
+```
+
+仓库不含 `lib/` 构建产物，插件包也没有 `prepare` 脚本，因此 `pnpm install` 与构建步骤不可省略，也无法直接 `dsh plugin add github:...` 安装。已构建过的仓库只需在 `dsh-plugin` 目录重新执行 `dsh plugin --profile gb1 add ./packages/gb1`；卸载用 `dsh plugin --profile gb1 remove dsh-gb1-scientific-agent`。
+
+也可以使用仓库自带的封装脚本，自动定位 `dsh` 命令行、Node.js 24+ 与 pnpm 并完成上述步骤：
 
 ```powershell
 pwsh -NoProfile -File .\Install-DSH-Plugin.ps1
 ```
 
-脚本会定位 `dsh` 命令行与 Node.js 24+ 工具链，在 `dsh-plugin` 目录安装依赖并构建插件，再把 `dsh-gb1-scientific-agent` 安装到独立 profile（默认 `gb1`）。完成后运行 `dsh --profile gb1` 启动，在插件设置中把 `projectRoot` 指向仓库根目录，即可在“蛋白质进化”页面一键准备并运行实验。默认位置未命中时可用 `-Profile`、`-Dsh`、`-Node` 参数显式指定。
+脚本把插件安装到独立 profile（默认 `gb1`），支持 `-Profile`、`-Dsh`、`-Node`、`-SkipBuild` 参数覆盖默认位置。安装后在插件设置中把 `projectRoot` 指向仓库根目录，即可在“蛋白质进化”页面一键准备并运行实验。
 
 ## 从哪里开始
 
