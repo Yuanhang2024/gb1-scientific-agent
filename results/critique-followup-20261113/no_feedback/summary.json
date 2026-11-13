@@ -1,0 +1,72 @@
+{
+  "comparison": [
+    {
+      "seed": 11,
+      "condition": "feedback",
+      "mean_30": 3.998,
+      "max_30": 7.2823,
+      "round_means": [
+        3.4477,
+        4.516,
+        4.0303
+      ]
+    },
+    {
+      "seed": 11,
+      "condition": "no_feedback",
+      "mean_30": 3.8133,
+      "max_30": 7.5547,
+      "round_means": [
+        3.4176,
+        4.6968,
+        3.3257
+      ]
+    },
+    {
+      "seed": 22,
+      "condition": "feedback",
+      "mean_30": 3.6581,
+      "max_30": 5.5934,
+      "round_means": [
+        4.0553,
+        3.7399,
+        3.1791
+      ]
+    },
+    {
+      "seed": 22,
+      "condition": "no_feedback",
+      "mean_30": 3.5375,
+      "max_30": 5.5913,
+      "round_means": [
+        4.1341,
+        3.7202,
+        2.7582
+      ]
+    },
+    {
+      "seed": 33,
+      "condition": "feedback",
+      "mean_30": 3.1017,
+      "max_30": 7.2287,
+      "round_means": [
+        2.8818,
+        2.8628,
+        3.5605
+      ]
+    },
+    {
+      "seed": 33,
+      "condition": "no_feedback",
+      "mean_30": 3.4307,
+      "max_30": 5.772,
+      "round_means": [
+        3.1297,
+        3.5556,
+        3.6067
+      ]
+    }
+  ],
+  "tokens_total": 162728,
+  "requests": 17
+}

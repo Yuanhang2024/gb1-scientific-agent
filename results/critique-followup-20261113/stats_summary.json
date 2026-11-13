@@ -1,0 +1,101 @@
+{
+  "s1_quantiles": {
+    "top1pct_fitness": 2.152372151259997,
+    "top5pct_fitness": 0.305672600518,
+    "global_top10": [
+      {
+        "variant": "FWAA",
+        "fitness": 8.76196565571
+      },
+      {
+        "variant": "FYAA",
+        "fitness": 8.04515200416
+      },
+      {
+        "variant": "ANCA",
+        "fitness": 7.55686908836
+      },
+      {
+        "variant": "FWCA",
+        "fitness": 7.55466318627
+      },
+      {
+        "variant": "FWLG",
+        "fitness": 7.31265639682
+      },
+      {
+        "variant": "WWCA",
+        "fitness": 7.28233277004
+      },
+      {
+        "variant": "LWCA",
+        "fitness": 7.22866005298
+      },
+      {
+        "variant": "YYAA",
+        "fitness": 6.98133337097
+      },
+      {
+        "variant": "FFAA",
+        "fitness": 6.92825718021
+      },
+      {
+        "variant": "WWLG",
+        "fitness": 6.87794904259
+      }
+    ]
+  },
+  "first_answer_overlap": {
+    "llm": {
+      "first_answer_candidates": 717,
+      "top1pct_rate": 0.5342,
+      "uniform_expectation_top1pct": 0.01,
+      "top5pct_rate": 0.7071,
+      "uniform_expectation_top5pct": 0.05
+    },
+    "knowledge": {
+      "first_answer_candidates": 691,
+      "top1pct_rate": 0.4211,
+      "uniform_expectation_top1pct": 0.01,
+      "top5pct_rate": 0.6295,
+      "uniform_expectation_top5pct": 0.05
+    }
+  },
+  "anchor_transfer": {
+    "v3-seed11:knowledge": {
+      "pairs": 44,
+      "success_rate": 0.3636,
+      "random_baseline": 0.0015
+    },
+    "v3-seed11:llm": {
+      "pairs": 36,
+      "success_rate": 0.7222,
+      "random_baseline": 0.0022
+    },
+    "v3-seed22:knowledge": {
+      "pairs": 37,
+      "success_rate": 0.2432,
+      "random_baseline": 0.0014
+    },
+    "v3-seed22:llm": {
+      "pairs": 39,
+      "success_rate": 0.1795,
+      "random_baseline": 0.0019
+    },
+    "v3-seed33:knowledge": {
+      "pairs": 53,
+      "success_rate": 0.2264,
+      "random_baseline": 0.0015
+    },
+    "v3-seed33:llm": {
+      "pairs": 46,
+      "success_rate": 0.3696,
+      "random_baseline": 0.0013
+    },
+    "ALL": {
+      "pairs": 255,
+      "success_rate": 0.3412,
+      "random_baseline": 0.0016
+    }
+  }
+}

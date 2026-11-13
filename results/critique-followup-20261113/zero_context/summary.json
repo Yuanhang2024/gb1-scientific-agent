@@ -1,0 +1,83 @@
+{
+  "model": "gpt-6-luna",
+  "batches": [
+    {
+      "batch": 1,
+      "returned": 50,
+      "valid": 50,
+      "spearman_model_rank_vs_actual": -0.2665,
+      "kendall_tau": -0.1931,
+      "top10_in_batch_hits": 3,
+      "batch_actual_top": [
+        "YVAT",
+        "WFMI",
+        "MRCD"
+      ]
+    },
+    {
+      "batch": 2,
+      "returned": 50,
+      "valid": 50,
+      "spearman_model_rank_vs_actual": -0.2688,
+      "kendall_tau": -0.1996,
+      "top10_in_batch_hits": 4,
+      "batch_actual_top": [
+        "WIAF",
+        "HYAF",
+        "SHGS"
+      ]
+    },
+    {
+      "batch": 3,
+      "returned": 50,
+      "valid": 50,
+      "spearman_model_rank_vs_actual": -0.1819,
+      "kendall_tau": -0.1282,
+      "top10_in_batch_hits": 2,
+      "batch_actual_top": [
+        "CNNT",
+        "IQVT",
+        "STLT"
+      ]
+    }
+  ],
+  "free_recall": {
+    "recalled": [
+      "WWLA",
+      "WWLG",
+      "FWLA",
+      "FWLG",
+      "WWFA",
+      "YWLA",
+      "FWFA",
+      "WWFG",
+      "YWLG",
+      "FWFG"
+    ],
+    "in_global_top10": [
+      "WWLG",
+      "FWLG"
+    ],
+    "in_global_top100": [
+      "WWLA",
+      "WWLG",
+      "FWLG",
+      "WWFA",
+      "WWFG",
+      "YWLG",
+      "FWFG"
+    ],
+    "recall_fitness": {
+      "WWLA": 6.29108287389,
+      "WWLG": 6.87794904259,
+      "FWLA": 3.66205789012,
+      "FWLG": 7.31265639682,
+      "WWFA": 5.84158330942,
+      "YWLA": 3.34512184343,
+      "FWFA": 2.45170885468,
+      "WWFG": 6.34349747898,
+      "YWLG": 5.63126819058,
+      "FWFG": 5.17332294456
+    }
+  }
+}

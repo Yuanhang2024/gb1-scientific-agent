@@ -263,7 +263,8 @@ def make_docx(summary,rec,rounds,final,usage,states):
     table(doc,['方法','总评分数','每轮有效数','API请求','tokens'],budget_rows,[4.3,3,3.5,2.7,3.5])
     paragraph(doc,f"正式实验共{summary['usage']['requests']}次API请求，服务返回总量{summary['usage']['total_tokens']:,} tokens；另有一次连接检查49 tokens。实际返回模型标识为 {', '.join(summary['usage']['model_ids'])}。没有可靠价格配置，因此不推算金额。环境使用Python3.12.14，关键依赖已固定，当前完整测试套件268项通过；数据划分与真实调用另有运行记录。",size=9.5)
     paragraph(doc,'改进方向：单独报告全池模型评分；比较初始数据规模和训练覆盖；在独立蛋白任务上检验泛化；用新实验评估未测序列。任何新模型或依赖先查资料，再按统一划分比较。')
-    paragraph(doc,'复现：按项目README安装requirements，依次运行prepare、select、run、finalize、plot、aggregate。原始数据下载链接、参数与种子已保存。独立API需用户自己的密钥；重新调用LLM可能产生不同输出，原响应已保留。代码与精选结果已发布于GitHub私有仓库 github.com/Yuanhang2024/gb1-scientific-agent（MIT许可证）。后续阶段已完成v3提示三种子验证、多模型与思考强度比较及默认值校准，结果见配套验证报告与本仓库校准报告。',size=9.5)
+    paragraph(doc,'复现：按项目README安装requirements，依次运行prepare、select、run、finalize、plot、aggregate。独立API需自备密钥；重新调用LLM可能产生不同输出，原响应已保留。代码与精选结果已发布于GitHub私有仓库 github.com/Yuanhang2024/gb1-scientific-agent（MIT许可证）。后续阶段已完成v3提示三种子验证、多模型比较与默认值校准，结果见配套验证报告与本仓库校准报告。',size=9.5)
+    paragraph(doc,'后续对照（2026-11-13）：零上下文时模型可回忆出全局前十中的2个，但对随机批次排序Spearman为−0.18至−0.27，说明预训练记忆了该公开数据的高分区域而非整表；首答候选42%—53%落入全局前1%，优势含记忆成分。同预算无反馈对照的均值差为+0.185、+0.121、−0.329，反馈无独立可测增益。资源限制：一周内单机CPU完成，ESM/GP需CUDA栈未验证，主实验用CPU可复现的one-hot与树集成（见仓库critique-followup结果）。',size=8.5)
     paragraph(doc,'参考来源与辅助工具',bold=True)
     refs=[
         '[1] Wu NC et al. eLife (2016), 5:e16965. doi:10.7554/eLife.16965. 数据S1及Figure 1 supplement 1。',
@@ -273,7 +274,7 @@ def make_docx(summary,rec,rounds,final,usage,states):
         '[5] Clark MA, Douglas M, Choi J. Biology 2e (2018), OpenStax, §3.4 Proteins。'
     ]
     for ref in refs: paragraph(doc,ref,size=8.5)
-    paragraph(doc,'资料查证由GPT-6 Luna辅助，代码由GPT-6.1 Sol辅助，主代理负责设计、检查、运行与正式文稿。项目内部模型调用与开发辅助分别记录，文中的实验数字由已保存结果计算。',size=8.5)
+    paragraph(doc,'资料查证由GPT-6 Luna辅助，代码由GPT-6.1 Sol辅助，主代理负责设计、检查与文稿；实验数字均由已保存结果计算。',size=8.5)
     path=OUT/'GB1首轮实验报告.docx'
     doc.save(path)
     reopened=Document(path)

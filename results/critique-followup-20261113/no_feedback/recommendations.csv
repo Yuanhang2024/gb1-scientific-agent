@@ -1,0 +1,91 @@
+﻿seed,round,rank,variant,predicted_fitness,actual_fitness,hypothesis,valid_candidates
+11,1,1,QRCA,2.57399787907602,3.84740004149,"Relative to HRCA, Q39 may retain a favorable C41/A54 combination; a loss would show that this motif depends on H39.",40
+11,1,2,HWCA,2.480997045450512,2.77407324191,"Relative to HRCA, W40 may help if the QWCA high-fitness W40/C41/A54 combination transfers; no gain would weaken that idea.",40
+11,1,3,YRCA,2.2103615418653932,4.76444118392,"Relative to HRCA, G41 may help in the Y39/R40/A54 background if YRGA's signal transfers; a decline weakens that hypothesis.",40
+11,1,4,FKFG,2.1809194534328693,3.11056992729,"Relative to FSFG, K40 may help if FKLT's K40/L41/T54 context transfers; no gain would weaken transfer to F41/G54.",40
+11,1,5,WRCA,2.0514230694545104,5.32111201754,"Relative to HRCA, W39 may help if the WNLT high-fitness context transfers; no improvement would weaken that transfer hypothesis.",40
+11,1,6,FSMG,1.9262778674418133,1.22945953044,"Relative to FSFG, M41 may retain fitness if LVMG's M41 context transfers; a decline would weaken transfer to F39/S40/G54.",40
+11,1,7,HNCA,1.883559468413007,4.2136047945,"Relative to HRCA, N40 may retain a favorable C41/A54 combination; a decline would weaken the N40 transfer hypothesis.",40
+11,1,8,FNLT,1.8550621892991586,2.40448609314,"Relative to WNLT, F39 may retain high fitness with N40/L41/T54; a decline would weaken transfer from the F39 anchor FSFG.",40
+11,1,9,FHCG,1.847047396674981,2.68171733472,"Relative to IHCG, F39 may retain fitness with H40/C41/G54; a decline would show that IHCG's H40/C41/G54 context depends on I39.",40
+11,1,10,WKLT,1.8287957090810618,3.82899241552,"Relative to WNLT, K40 may retain high fitness with W39/L41/T54; a decline would suggest the high K40 example is context-dependent.",40
+11,2,1,QHCA,2.168718739325547,4.2713975521,"Compared with QWCA, H40 may improve the Q39/C41/A54 background; no improvement would weaken transfer from IHCG.",40
+11,2,2,QKCA,2.149942446885338,3.47422528509,"Compared with QWCA, K40 may improve the Q39/C41/A54 background; a lower result would weaken this charge-change hypothesis.",40
+11,2,3,IRCA,2.091217390814885,4.42016162604,"Compared with HRCA, I39 may retain or improve fitness with R40/C41/A54; a decline would argue against transferring the IHCG pattern.",40
+11,2,4,YWCA,2.063972877989598,5.97471878221,"Compared with QWCA, Y39 may improve the W40/C41/A54 combination; a decline would weaken transfer from YRGA.",40
+11,2,5,FRCA,2.0514230694545104,3.86075249362,"Compared with HRCA, F39 may improve the R40/C41/A54 combination; a lower result would weaken this cross-background expectation.",40
+11,2,6,FWCA,2.0376857801139163,7.55466318627,"Compared with QWCA, F39 may improve the W40/C41/A54 combination; a lower result would weaken transfer from FSFG.",40
+11,2,7,WSFA,1.7308543262306975,5.467824696,"Compared with FSFG, W39 may improve the S40/F41/A54 combination; a lower result would weaken transfer from W-rich anchors.",40
+11,2,8,IHCA,1.5296808944787248,4.77653600226,"Compared with IHCG, A54 may improve the I39/H40/C41 background; a decline would weaken transfer from A54-rich anchors.",40
+11,2,9,WNCA,1.4272703348050981,4.62925931887,"Compared with WNLT, C41 may improve the W39/N40/A54 background; a lower result would weaken transfer from C41/A54 anchors.",40
+11,2,10,WDLT,1.32966546731493,2.53807448177,"Compared with WDLG, T54 may improve the W39/D40/L41 background; a decline would weaken transfer from WNLT.",40
+11,3,1,FAFG,2.1815069831346188,3.31318384139,"FSFG is a high anchor; changing S40 to A may help with F-F-G, but lower fitness would weaken this expectation.",40
+11,3,2,FRFG,2.180936750433804,4.87500002628,"FSFG is a high anchor; changing D40 to R may help with F-F-G, but lower fitness would weaken this local prediction.",40
+11,3,3,IWCA,2.0706130571927903,6.00762683594,"HRCA is a high anchor; changing H39 to I may help with WCA, but lower fitness would weaken this expectation.",40
+11,3,4,FDLG,1.9530763252970755,2.57731772223,"WDLG is a high anchor; changing W39 to F may help with D-L-G, but lower fitness would weaken this transfer hypothesis.",40
+11,3,5,HNLT,1.7139752408341504,0.674283336969,"WNLT is a high anchor; changing W39 to H may help, but lower fitness would weaken the transfer of H39 into this context.",40
+11,3,6,INLT,1.7010233580157512,1.39207351787,"WNLT is a high anchor; changing W39 to I may help, but lower fitness would weaken this expectation in the NLT background.",40
+11,3,7,YNLT,1.696422370865075,2.83436051486,"WNLT is a high anchor; changing W39 to Y may help, but lower fitness would weaken the proposed transfer to NLT.",40
+11,3,8,LNLT,1.656207835410492,3.71851197202,"WNLT is a high anchor; changing W39 to L may retain or improve fitness, but a lower result would weaken this expectation.",40
+11,3,9,FNLG,1.5224160050712208,3.97791218361,"WNLT is a high anchor; changing W39 to F and T54 to G may help, but lower fitness would weaken this combined-change expectation.",40
+11,3,10,FKLG,1.4332733034157743,3.8867496022,"FKLT is a high anchor; changing T54 to G may help, but lower fitness would weaken this local expectation.",40
+22,1,1,LYLG,3.0622047726884394,3.74335582986,"From LNLG, changing 40N to Y will help; a result no better than LNLG weakens this local substitution hypothesis.",40
+22,1,2,WIFV,2.92960609274578,4.92709517832,"From WVFV, changing 40V to I will help; a result no better than the anchor weakens this local substitution hypothesis.",40
+22,1,3,LRLG,2.8914726654488487,5.04118015212,"From LRLC, changing 54C to G will help; a result no better than LRLC weakens this local substitution hypothesis.",40
+22,1,4,LALG,2.8746155757027925,4.28590910349,"From LNLG, changing 40N to A will help; a result no better than LNLG weakens this local substitution hypothesis.",40
+22,1,5,WKFV,2.715323179281744,4.49044298538,"From WVFV, changing 40V to K will help; a result no better than the anchor weakens this local substitution hypothesis.",40
+22,1,6,WNFV,2.7105840857443,3.98865068505,"From WVFV, changing 40V to N will help; a result no better than the anchor weakens this local substitution hypothesis.",40
+22,1,7,YVLG,2.5775742138450486,4.09202971284,"From YVLA, changing 54A to G will help; a result no better than YVLA weakens this local substitution hypothesis.",40
+22,1,8,MALG,2.562703420613068,3.12692790879,"From MACG, changing 41C to L will help; a result no better than MACG weakens this local substitution hypothesis.",40
+22,1,9,WYFV,2.553589319533846,3.39178126829,"From WVFV, changing 40V to Y will help; a result no better than the anchor weakens this local substitution hypothesis.",40
+22,1,10,WYLG,2.4663140343960004,4.25360059199,"From WVFV, changing 40V to Y and 41F to L will help; a result no better than the anchor weakens this combination hypothesis.",40
+22,2,1,LVLG,2.9334345609810497,3.93644029857,"Relative to LNLG, V at position 40 may improve the L/V/L/G combination; a lower result would weaken this hypothesis.",40
+22,2,2,LILG,2.9057914384780488,4.66218775492,"Relative to LNLG, I at position 40 may improve the L/I/L/G combination; a lower result would weaken this hypothesis.",40
+22,2,3,WHFV,2.7099006747742034,4.13754720699,"Relative to WVFV, H at position 40 may retain the favorable W/F/V context; a lower measured result would weaken this local substitution hypothesis.",40
+22,2,4,WSFV,2.7067864632948972,5.26740537941,"Relative to WVFV, S at position 40 may retain the favorable W/F/V context; a lower measured result would weaken this local substitution hypothesis.",40
+22,2,5,WQFV,2.7020543017120575,3.23007656465,"Relative to WVFV, Q at position 40 may retain the favorable W/F/V context; a lower measured result would weaken this local substitution hypothesis.",40
+22,2,6,YALG,2.5340236513978147,3.59475708153,"Relative to YYLG, A at position 40 may improve the Y/L/G context; a lower result would weaken this substitution hypothesis.",40
+22,2,7,LNLA,2.0088934065287027,3.53787412214,"Relative to LNLG, A at position 54 may improve the L/N/L background; a lower result would weaken this change.",40
+22,2,8,YVCA,1.9818436757831646,4.10724462896,"Relative to YSCA, V at position 40 may improve the Y/V/C/A combination; a lower result would weaken this hypothesis.",40
+22,2,9,MAFG,1.9394193022103574,2.40487672317,"Relative to MACG, F at position 41 may improve the M/A/F/G combination; a lower result would weaken this hypothesis.",40
+22,2,10,YSLA,1.695796464702266,2.32374683221,"Relative to YSCA, L at position 41 may improve the Y/S/L/A combination; a lower result would weaken this hypothesis.",40
+22,3,1,LSLG,2.9662705088346684,4.34609616378,"From LNLG, changing position 40 N to S will help; lower fitness than the anchor would weaken this expectation.",40
+22,3,2,WNLG,2.381563924243099,4.23395755114,"From LNLG, changing position 39 L to W will help; lower fitness than the anchor would weaken this expectation.",40
+22,3,3,ANLG,2.05682721917093,5.59130003015,"From LNLG, changing position 39 L to A will help; lower fitness than the anchor would weaken this expectation.",40
+22,3,4,YACA,1.7891149993160043,4.43422929171,"From YSCA, changing position 40 S to A will help; lower fitness than the anchor would weaken this expectation.",40
+22,3,5,WAFT,1.7228883140189877,4.0376556984,"From WAFV, changing V54 to T will help; lower fitness than the anchor would weaken this expectation.",40
+22,3,6,WVFT,1.483312232900088,4.08877073969,"From WVFV, changing V54 to T will help; lower fitness than the anchor would weaken this expectation.",40
+22,3,7,WAFI,1.4617732937440153,0.25752035183,"From WAFV, changing V54 to I will help; lower fitness than the anchor would weaken this expectation.",40
+22,3,8,WAFS,1.4545733804581875,0.484197377968,"From WAFV, changing V54 to S will help; lower fitness than the anchor would weaken this expectation.",40
+22,3,9,WAFY,1.44770163849968,0.0109849431166,"From WAFV, changing V54 to Y will help; lower fitness than the anchor would weaken this expectation.",40
+22,3,10,WAFM,1.4469675441276646,0.0974411855808,"From WAFV, changing V54 to M will help; lower fitness than the anchor would weaken this expectation.",40
+33,1,1,INCA,2.3983473668373616,5.36789625536,"Relative to YNCA, test N at 40 while retaining 41C and 54A; improvement would support this context, while no gain would weaken it.",40
+33,1,2,YVCA,2.2175014522073244,4.10724462896,"Relative to YNCA, test V at 40; improvement would support 40V with this background, while no gain would weaken transfer from EVCA.",40
+33,1,3,LNFG,1.8876607818259457,2.84558771168,"Relative to LNLA, test F at 41 and G at 54; improvement would support this combination, while no gain would weaken transfer from VNFG.",40
+33,1,4,YNFG,1.8788443258436647,2.8007890776,"Relative to VNFG, test Y at 39; improvement would support 39Y in this context, while no gain would weaken that transfer hypothesis.",40
+33,1,5,YNGA,1.3620643818810816,2.65133268096,"Relative to YNCA, test G at 41; improvement would support 41G with this background, while no gain would weaken transfer from TWGF.",40
+33,1,6,YNFA,1.3356670786856533,0.752550035925,"Relative to YNCA, test F at 41; improvement would support 41F in this background, while no gain would weaken transfer from VNFG.",40
+33,1,7,VYFG,1.3228509966204234,1.7054074166,"Relative to VNFG, test Y at 40; improvement would support 40Y with 39V, 41F, and 54G, while no gain would weaken transfer from IYGV.",40
+33,1,8,EVFG,1.3139257427153017,1.93011791288,"Relative to EVCA, test 54G; improvement would support 54G alongside its 41C, while no gain would weaken that combination hypothesis.",40
+33,1,9,IWGF,1.305124491097465,5.77203220934,"Relative to TWGF, test I at 39; improvement would support 39I with the remaining residues, while no gain would weaken transfer from IYGV.",40
+33,1,10,IYGF,1.2106628401474275,3.3642475223,"Relative to IYGV, test F at 54; improvement would support 54F with this background, while no gain would weaken transfer from TWGF.",40
+33,2,1,LNLG,2.4138337948254005,4.33269483572,"From LNLA, replace A54 with G; improvement would support G with L/N/L, while lower fitness would weaken that expectation.",40
+33,2,2,ENCA,2.394708254519259,4.55282872825,"From YNCA, test E39 instead of Y; improvement would support E39 with N/C/A, while a decrease would weaken this transfer.",40
+33,2,3,WYLG,2.1245576079558037,4.25360059199,"From WYMA, replace M41 with L and A54 with G; improvement would support this cross-anchor combination, while lower fitness would weaken it.",40
+33,2,4,YVLG,1.9924564807504774,4.09202971284,"From YNLG, replace N40 with V and retain L41/G54; improvement would support V40 in this context, while lower fitness would weaken it.",40
+33,2,5,INFG,1.8832946085744635,3.22304071052,"From VNFG, test I39 instead of V; improvement would support I39 in the N/F/G context, while lower fitness would weaken it.",40
+33,2,6,YNLA,1.5124994464139023,1.91117568598,"From YNCA, replace C41 with L; improvement would support L in the Y/N/A context, while lower fitness would weaken it.",40
+33,2,7,YWGF,1.3085752835138207,2.75944394492,"From TWGF, test Y39 instead of T; improvement would support Y39 in the W/G/F context, while a decrease would weaken it.",40
+33,2,8,YVGA,1.1890406632061221,3.08853660112,"From IYGV, replace D40's Y with V and V39's I with Y; improvement would support this swap, while lower fitness would weaken it.",40
+33,2,9,YNCG,1.1289137546482226,2.26722574658,"From YNCA, replace A54 with G; improvement would support G with Y/N/C, while lower fitness would weaken that expectation.",40
+33,2,10,LYGV,1.0648751157350336,5.07529943739,"From LHGV, test Y40 instead of H; improvement would support Y40 with L/G/V, while lower fitness would weaken the expectation.",40
+33,3,1,YQCA,2.0805113540174784,2.94122696621,"Against YNCA, changing 40N to Q should help; equal or lower fitness would weaken this alternative 40-residue hypothesis.",40
+33,3,2,IVCA,2.0792221371408552,3.64813830642,"Against EVCA, changing 39E to I should help; equal or lower fitness would weaken transfer from IYGV.",40
+33,3,3,YICA,2.0715419778366932,5.08124399565,"Against YNCA, changing 40N to I should help; equal or lower fitness would weaken transfer from YIGA.",40
+33,3,4,YHCA,2.0711597094144034,4.6492942959,"Against YNCA, changing 40N to H should help; equal or lower fitness would weaken this transfer prediction.",40
+33,3,5,WVCA,2.064792694371507,4.03062904804,"Against EVCA, changing 39E to W should help; equal or lower fitness would weaken transfer from high W39 examples.",40
+33,3,6,EVLG,1.9938957937488748,3.65734127988,"Against EVCA, changing 41C to L should help; equal or lower fitness would weaken transfer from high 41L variants.",40
+33,3,7,YKAA,1.331033653357961,3.23754984364,"Against FKAA, changing 39F to Y should help; equal or lower fitness would weaken the proposed 39Y transfer.",40
+33,3,8,WKAA,1.2397986105544,2.46796816145,"Against FKAA, changing 39F to W should help; equal or lower fitness would weaken transfer from high W39 examples.",40
+33,3,9,YYGV,1.1879238291017713,2.40308762502,"Against IYGV, changing 39I to Y should help; equal or lower fitness would weaken the 39Y transfer hypothesis.",40
+33,3,10,LKAA,1.1652678852578786,3.95031195259,"Against FKAA, changing 39F to L should help; equal or lower fitness would weaken the proposed 39L transfer.",40
