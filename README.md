@@ -241,4 +241,4 @@ mean_plus_std的推荐均值为3.4787，greedy为3.4194；随机留出校准覆�
 
 本项目使用[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)组织AI辅助开发、任务协作、模型调用与实验运行，并将其列入[贡献者说明](<CONTRIBUTORS.md>)。维护者负责研究设计、结果检查与代码维护。各阶段使用的AI模型、实际模型标识和tokens以相应报告及运行记录为准；当前工作台推荐配置为GPT-6.1 Sol / xhigh。
 
-本仓库地址：<https://github.com/Yuanhang2024/gb1-scientific-agent>（私有）。提交范围经过审查，排除了 `.env`、虚拟环境、隐藏评估标签和完整运行记录；报告通过引用原始来源说明数据获取方式。
+本仓库地址：<https://github.com/Yuanhang2024/gb1-scientific-agent>（私有）。提交范围经过审查，排除了 `.env`、虚拟环境、隐藏评估标签和完整运行记录；报告通过引用原始来源说明数据获取方式。代码采用 MIT 许可证（见 [LICENSE](<LICENSE>)）；GB1 数据遵循原论文的 CC BY 4.0 归属要求。
