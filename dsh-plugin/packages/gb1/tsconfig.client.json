@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "types": ["react"],
+    "rootDir": "./src",
+    "outDir": "./lib/types",
+    "incremental": false
+  },
+  "include": ["src/client/**/*", "src/contracts.ts"],
+  "exclude": ["test", "lib", "node_modules"]
+}

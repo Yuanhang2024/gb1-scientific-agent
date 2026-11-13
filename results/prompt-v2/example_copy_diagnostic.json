@@ -1,0 +1,146 @@
+[
+  {
+    "seed": 11,
+    "method": "llm",
+    "round": 1,
+    "first_generated": 40,
+    "copied_examples": 40,
+    "new_outside_examples": 0
+  },
+  {
+    "seed": 11,
+    "method": "llm",
+    "round": 2,
+    "first_generated": 40,
+    "copied_examples": 40,
+    "new_outside_examples": 0
+  },
+  {
+    "seed": 11,
+    "method": "llm",
+    "round": 3,
+    "first_generated": 40,
+    "copied_examples": 40,
+    "new_outside_examples": 0
+  },
+  {
+    "seed": 11,
+    "method": "knowledge",
+    "round": 1,
+    "first_generated": 40,
+    "copied_examples": 40,
+    "new_outside_examples": 0
+  },
+  {
+    "seed": 11,
+    "method": "knowledge",
+    "round": 2,
+    "first_generated": 40,
+    "copied_examples": 40,
+    "new_outside_examples": 0
+  },
+  {
+    "seed": 11,
+    "method": "knowledge",
+    "round": 3,
+    "first_generated": 40,
+    "copied_examples": 40,
+    "new_outside_examples": 0
+  },
+  {
+    "seed": 22,
+    "method": "llm",
+    "round": 1,
+    "first_generated": 40,
+    "copied_examples": 40,
+    "new_outside_examples": 0
+  },
+  {
+    "seed": 22,
+    "method": "llm",
+    "round": 2,
+    "first_generated": 40,
+    "copied_examples": 40,
+    "new_outside_examples": 0
+  },
+  {
+    "seed": 22,
+    "method": "llm",
+    "round": 3,
+    "first_generated": 40,
+    "copied_examples": 40,
+    "new_outside_examples": 0
+  },
+  {
+    "seed": 22,
+    "method": "knowledge",
+    "round": 1,
+    "first_generated": 40,
+    "copied_examples": 40,
+    "new_outside_examples": 0
+  },
+  {
+    "seed": 22,
+    "method": "knowledge",
+    "round": 2,
+    "first_generated": 40,
+    "copied_examples": 40,
+    "new_outside_examples": 0
+  },
+  {
+    "seed": 22,
+    "method": "knowledge",
+    "round": 3,
+    "first_generated": 40,
+    "copied_examples": 40,
+    "new_outside_examples": 0
+  },
+  {
+    "seed": 33,
+    "method": "llm",
+    "round": 1,
+    "first_generated": 40,
+    "copied_examples": 40,
+    "new_outside_examples": 0
+  },
+  {
+    "seed": 33,
+    "method": "llm",
+    "round": 2,
+    "first_generated": 40,
+    "copied_examples": 40,
+    "new_outside_examples": 0
+  },
+  {
+    "seed": 33,
+    "method": "llm",
+    "round": 3,
+    "first_generated": 40,
+    "copied_examples": 40,
+    "new_outside_examples": 0
+  },
+  {
+    "seed": 33,
+    "method": "knowledge",
+    "round": 1,
+    "first_generated": 40,
+    "copied_examples": 40,
+    "new_outside_examples": 0
+  },
+  {
+    "seed": 33,
+    "method": "knowledge",
+    "round": 2,
+    "first_generated": 40,
+    "copied_examples": 39,
+    "new_outside_examples": 0
+  },
+  {
+    "seed": 33,
+    "method": "knowledge",
+    "round": 3,
+    "first_generated": 40,
+    "copied_examples": 39,
+    "new_outside_examples": 0
+  }
+]

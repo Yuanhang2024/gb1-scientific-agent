@@ -1,0 +1,333 @@
+{
+  "seeds": [
+    11,
+    22,
+    33
+  ],
+  "selections": [
+    {
+      "seed": 11,
+      "family": "random_forest",
+      "leaf": 1,
+      "validation_spearman": 0.5441056379933856,
+      "validation_pearson": 0.6171284563204205,
+      "validation_mse": 0.09292765596885066,
+      "validation_top10": 0.5,
+      "fit_seconds": 0.24752059997990727
+    },
+    {
+      "seed": 22,
+      "family": "random_forest",
+      "leaf": 1,
+      "validation_spearman": 0.5233802098063839,
+      "validation_pearson": 0.4721701171644875,
+      "validation_mse": 0.09503237016532123,
+      "validation_top10": 0.2,
+      "fit_seconds": 0.22893610002938658
+    },
+    {
+      "seed": 33,
+      "family": "random_forest",
+      "leaf": 3,
+      "validation_spearman": 0.5465110559266835,
+      "validation_pearson": 0.6168317979218593,
+      "validation_mse": 0.12989810882778227,
+      "validation_top10": 0.2,
+      "fit_seconds": 0.17338190000737086
+    }
+  ],
+  "methods": {
+    "random": {
+      "round_mean_fitness": {
+        "1": {
+          "mean": 0.13399446941484233,
+          "sd": 0.1412967282123295,
+          "n": 3
+        },
+        "2": {
+          "mean": 0.03653541427101767,
+          "sd": 0.030205380536323795,
+          "n": 3
+        },
+        "3": {
+          "mean": 0.35183266526665,
+          "sd": 0.16937227540249933,
+          "n": 3
+        }
+      },
+      "best_new_by_seed": {
+        "11": 1.20169703328,
+        "22": 3.4808583521,
+        "33": 5.04118015212
+      },
+      "best_new": {
+        "mean": 3.2412451791666665,
+        "sd": 1.9309242630011976,
+        "n": 3
+      },
+      "cumulative_best_final": {
+        "mean": 4.72739556574,
+        "sd": 0.46916830284854866,
+        "n": 3
+      },
+      "initial_best_by_seed": {
+        "11": 4.18804631888,
+        "22": 4.95296022622,
+        "33": 4.52237502438
+      },
+      "seeds_improved_initial": 1,
+      "mean_selected_fitness": {
+        "mean": 0.17412084965083666,
+        "sd": 0.07144710305607177,
+        "n": 3
+      },
+      "wt_above_count": 4,
+      "selected_count": 90,
+      "min_candidates": 40,
+      "max_candidates": 40,
+      "score_count_total": 360,
+      "test_spearman": {
+        "mean": 0.5320226809222028,
+        "sd": 0.013635419542799537,
+        "n": 3
+      },
+      "test_mse": {
+        "mean": 0.11304878321413395,
+        "sd": 0.007598110402283056,
+        "n": 3
+      },
+      "test_pearson": {
+        "mean": 0.5425061734450404,
+        "sd": 0.0565751999780401,
+        "n": 3
+      },
+      "test_top10": {
+        "mean": 0.03333333333333333,
+        "sd": 0.05773502691896258,
+        "n": 3
+      }
+    },
+    "model": {
+      "round_mean_fitness": {
+        "1": {
+          "mean": 0.312303215439285,
+          "sd": 0.3383838222018925,
+          "n": 3
+        },
+        "2": {
+          "mean": 0.4011647753045131,
+          "sd": 0.5199959558178326,
+          "n": 3
+        },
+        "3": {
+          "mean": 0.4448987902933073,
+          "sd": 0.36864879331689543,
+          "n": 3
+        }
+      },
+      "best_new_by_seed": {
+        "11": 1.20169703328,
+        "22": 4.84434038757,
+        "33": 6.04207763853
+      },
+      "best_new": {
+        "mean": 4.02937168646,
+        "sd": 2.5210021001105454,
+        "n": 3
+      },
+      "cumulative_best_final": {
+        "mean": 5.06102806121,
+        "sd": 0.9317279786935402,
+        "n": 3
+      },
+      "initial_best_by_seed": {
+        "11": 4.18804631888,
+        "22": 4.95296022622,
+        "33": 4.52237502438
+      },
+      "seeds_improved_initial": 1,
+      "mean_selected_fitness": {
+        "mean": 0.38612226034570185,
+        "sd": 0.24021137058106717,
+        "n": 3
+      },
+      "wt_above_count": 8,
+      "selected_count": 90,
+      "min_candidates": 40,
+      "max_candidates": 40,
+      "score_count_total": 360,
+      "test_spearman": {
+        "mean": 0.5318391570833401,
+        "sd": 0.011242696219841412,
+        "n": 3
+      },
+      "test_mse": {
+        "mean": 0.11064832068560751,
+        "sd": 0.003435645248496828,
+        "n": 3
+      },
+      "test_pearson": {
+        "mean": 0.5560351307157023,
+        "sd": 0.03674709005433371,
+        "n": 3
+      },
+      "test_top10": {
+        "mean": 0.1,
+        "sd": 0.1,
+        "n": 3
+      }
+    },
+    "llm": {
+      "round_mean_fitness": {
+        "1": {
+          "mean": 2.6899815844740123,
+          "sd": 1.7245940138362468,
+          "n": 3
+        },
+        "2": {
+          "mean": 1.8162939144259478,
+          "sd": 2.5904058706838597,
+          "n": 3
+        },
+        "3": {
+          "mean": 1.7456443612584724,
+          "sd": 1.8818242401251108,
+          "n": 3
+        }
+      },
+      "best_new_by_seed": {
+        "11": 6.0442371447,
+        "22": 4.84434038757,
+        "33": 4.48123728629
+      },
+      "best_new": {
+        "mean": 5.123271606186667,
+        "sd": 0.8179817283330078,
+        "n": 3
+      },
+      "cumulative_best_final": {
+        "mean": 5.173190798433334,
+        "sd": 0.7844693792744757,
+        "n": 3
+      },
+      "initial_best_by_seed": {
+        "11": 4.18804631888,
+        "22": 4.95296022622,
+        "33": 4.52237502438
+      },
+      "seeds_improved_initial": 1,
+      "mean_selected_fitness": {
+        "mean": 2.0839732867194773,
+        "sd": 1.7949266691344299,
+        "n": 3
+      },
+      "wt_above_count": 48,
+      "selected_count": 90,
+      "min_candidates": 39,
+      "max_candidates": 40,
+      "score_count_total": 358,
+      "test_spearman": {
+        "mean": 0.5344220093952664,
+        "sd": 0.009970817075485036,
+        "n": 3
+      },
+      "test_mse": {
+        "mean": 0.1088053793687112,
+        "sd": 0.0043858815865869686,
+        "n": 3
+      },
+      "test_pearson": {
+        "mean": 0.5675204891442936,
+        "sd": 0.024251303106264138,
+        "n": 3
+      },
+      "test_top10": {
+        "mean": 0.2,
+        "sd": 0.0,
+        "n": 3
+      }
+    },
+    "knowledge": {
+      "round_mean_fitness": {
+        "1": {
+          "mean": 0.6581892641046666,
+          "sd": 0.45124187091877993,
+          "n": 3
+        },
+        "2": {
+          "mean": 2.5579525187658696,
+          "sd": 1.9778531940558604,
+          "n": 3
+        },
+        "3": {
+          "mean": 1.3276024659113697,
+          "sd": 1.5241754053372547,
+          "n": 3
+        }
+      },
+      "best_new_by_seed": {
+        "11": 5.04459938766,
+        "22": 4.84434038757,
+        "33": 5.14126464113
+      },
+      "best_new": {
+        "mean": 5.010068138786667,
+        "sd": 0.1514440769710222,
+        "n": 3
+      },
+      "cumulative_best_final": {
+        "mean": 5.04627475167,
+        "sd": 0.0941633862075588,
+        "n": 3
+      },
+      "initial_best_by_seed": {
+        "11": 4.18804631888,
+        "22": 4.95296022622,
+        "33": 4.52237502438
+      },
+      "seeds_improved_initial": 2,
+      "mean_selected_fitness": {
+        "mean": 1.514581416260635,
+        "sd": 1.017660995741691,
+        "n": 3
+      },
+      "wt_above_count": 40,
+      "selected_count": 90,
+      "min_candidates": 10,
+      "max_candidates": 40,
+      "score_count_total": 285,
+      "test_spearman": {
+        "mean": 0.535118498486096,
+        "sd": 0.009456614681130843,
+        "n": 3
+      },
+      "test_mse": {
+        "mean": 0.10912969843915532,
+        "sd": 0.0061282875431964276,
+        "n": 3
+      },
+      "test_pearson": {
+        "mean": 0.568233733395651,
+        "sd": 0.03901967475395342,
+        "n": 3
+      },
+      "test_top10": {
+        "mean": 0.2,
+        "sd": 0.0,
+        "n": 3
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 188800,
+    "completion_tokens": 108862,
+    "total_tokens": 297662,
+    "requests": 31,
+    "model_ids": [
+      "gpt-6-luna"
+    ]
+  },
+  "total_recommendations": 360,
+  "unique_recommended_variants": 274,
+  "rounds_completed": 36
+}

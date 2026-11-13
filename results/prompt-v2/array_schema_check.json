@@ -1,0 +1,38 @@
+{
+  "purpose": "two-item array schema compatibility check",
+  "requested_model": "gpt-6-luna",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "minItems": 2,
+        "maxItems": 2
+      }
+    },
+    "required": [
+      "items"
+    ],
+    "additionalProperties": false
+  },
+  "status": "passed",
+  "returned_item_count": 2,
+  "model_returned": "gpt-6-luna",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 40,
+    "prompt_tokens": 49,
+    "total_tokens": 89,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": null,
+      "reasoning_tokens": 21,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null
+    },
+    "prompt_tokens_details": null
+  }
+}

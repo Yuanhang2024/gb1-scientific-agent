@@ -1,0 +1,36 @@
+{
+  "rules": [
+    {
+      "id": "sidechain-properties",
+      "scope": "General amino-acid chemistry; used as design hypotheses for GB1, not as measured fitness effects",
+      "condition": "Comparing amino-acid substitutions",
+      "action": "Describe the chemical change of the side chain. Valine, methionine and alanine are examples of nonpolar side chains; serine, threonine and cysteine are examples of polar side chains.",
+      "source": "OpenStax Biology 2e, section 3.4 Proteins, Amino Acids: https://openstax.org/books/biology-2e/pages/3-4-proteins",
+      "explanation": "Side-chain chemistry may motivate a hypothesis, but it does not establish whether a substitution improves the GB1 assay."
+    },
+    {
+      "id": "sidechain-charge",
+      "scope": "General amino-acid chemistry; protonation depends on environment",
+      "condition": "A proposed substitution changes charge class",
+      "action": "Consider lysine and arginine as positively charged side-chain examples and aspartate and glutamate as negatively charged examples under typical biological conditions. State the proposed interaction and its uncertainty.",
+      "source": "OpenStax Biology 2e, section 3.4 Proteins: https://openstax.org/books/biology-2e/pages/3-4-proteins",
+      "explanation": "Charge is a chemical descriptor, not a direction-of-fitness rule."
+    },
+    {
+      "id": "glycine-proline-geometry",
+      "scope": "General amino-acid structure; no GB1-specific fitness claim",
+      "condition": "Introducing or replacing glycine or proline",
+      "action": "Discuss the small hydrogen side chain of glycine and the cyclic structure of proline when forming a structural hypothesis. Keep structural effects conditional without a structure-specific calculation.",
+      "source": "OpenStax Biology 2e, section 3.4 Proteins: https://openstax.org/books/biology-2e/pages/3-4-proteins",
+      "explanation": "These chemical distinctions motivate experiments and do not impose a hard candidate filter."
+    },
+    {
+      "id": "gb1-epistasis",
+      "scope": "Wu et al. 2016 GB1 four-site combinations at 39,40,41,54",
+      "condition": "Combining substitutions or interpreting marginal residue statistics",
+      "action": "Treat combined substitutions as a testable hypothesis. A favorable observation in one background need not transfer additively to another background; use only current-method known measurements and feedback when supporting a design.",
+      "source": "Wu et al. 2016, Adaptation in protein fitness landscapes is facilitated by indirect paths: https://elifesciences.org/articles/16965 ; https://pmc.ncbi.nlm.nih.gov/articles/PMC4985287/",
+      "explanation": "The rule communicates epistasis without revealing high-fitness variants or hidden labels."
+    }
+  ]
+}

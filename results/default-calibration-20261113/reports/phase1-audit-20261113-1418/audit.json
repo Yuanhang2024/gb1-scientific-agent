@@ -1,0 +1,541 @@
+{
+  "passed": true,
+  "check_totals": {
+    "passed": 46344,
+    "errors": 0,
+    "warnings": 0,
+    "total": 46344
+  },
+  "check_counts": [
+    {
+      "code": "adapter_output_limit",
+      "passed": 1252,
+      "errors": 0,
+      "warnings": 0,
+      "total": 1252
+    },
+    {
+      "code": "analysis_completion",
+      "passed": 234,
+      "errors": 0,
+      "warnings": 0,
+      "total": 234
+    },
+    {
+      "code": "analysis_equal_seed_mean",
+      "passed": 24,
+      "errors": 0,
+      "warnings": 0,
+      "total": 24
+    },
+    {
+      "code": "analysis_missing_quality",
+      "passed": 18,
+      "errors": 0,
+      "warnings": 0,
+      "total": 18
+    },
+    {
+      "code": "analysis_missing_seed_mean",
+      "passed": 2,
+      "errors": 0,
+      "warnings": 0,
+      "total": 2
+    },
+    {
+      "code": "analysis_profile_counts",
+      "passed": 26,
+      "errors": 0,
+      "warnings": 0,
+      "total": 26
+    },
+    {
+      "code": "analysis_profile_missing",
+      "passed": 26,
+      "errors": 0,
+      "warnings": 0,
+      "total": 26
+    },
+    {
+      "code": "analysis_resource_totals",
+      "passed": 234,
+      "errors": 0,
+      "warnings": 0,
+      "total": 234
+    },
+    {
+      "code": "analysis_trajectory_max",
+      "passed": 216,
+      "errors": 0,
+      "warnings": 0,
+      "total": 216
+    },
+    {
+      "code": "analysis_trajectory_mean",
+      "passed": 216,
+      "errors": 0,
+      "warnings": 0,
+      "total": 216
+    },
+    {
+      "code": "analysis_trajectory_missing",
+      "passed": 234,
+      "errors": 0,
+      "warnings": 0,
+      "total": 234
+    },
+    {
+      "code": "attempt_prompt_metadata",
+      "passed": 1252,
+      "errors": 0,
+      "warnings": 0,
+      "total": 1252
+    },
+    {
+      "code": "complete_public_request_payload",
+      "passed": 1252,
+      "errors": 0,
+      "warnings": 0,
+      "total": 1252
+    },
+    {
+      "code": "completed_round_count",
+      "passed": 234,
+      "errors": 0,
+      "warnings": 0,
+      "total": 234
+    },
+    {
+      "code": "effective_model_route",
+      "passed": 1252,
+      "errors": 0,
+      "warnings": 0,
+      "total": 1252
+    },
+    {
+      "code": "execution_condition_coverage",
+      "passed": 1,
+      "errors": 0,
+      "warnings": 0,
+      "total": 1
+    },
+    {
+      "code": "execution_condition_unchanged",
+      "passed": 234,
+      "errors": 0,
+      "warnings": 0,
+      "total": 234
+    },
+    {
+      "code": "frozen_prompt_metadata",
+      "passed": 234,
+      "errors": 0,
+      "warnings": 0,
+      "total": 234
+    },
+    {
+      "code": "generation_settings",
+      "passed": 234,
+      "errors": 0,
+      "warnings": 0,
+      "total": 234
+    },
+    {
+      "code": "host_call_numbers",
+      "passed": 234,
+      "errors": 0,
+      "warnings": 0,
+      "total": 234
+    },
+    {
+      "code": "host_calls_have_attempts",
+      "passed": 234,
+      "errors": 0,
+      "warnings": 0,
+      "total": 234
+    },
+    {
+      "code": "host_feedback_round_count",
+      "passed": 234,
+      "errors": 0,
+      "warnings": 0,
+      "total": 234
+    },
+    {
+      "code": "host_round_call_budget",
+      "passed": 234,
+      "errors": 0,
+      "warnings": 0,
+      "total": 234
+    },
+    {
+      "code": "host_usage_snapshot",
+      "passed": 1252,
+      "errors": 0,
+      "warnings": 0,
+      "total": 1252
+    },
+    {
+      "code": "incomplete_round_is_last",
+      "passed": 658,
+      "errors": 0,
+      "warnings": 0,
+      "total": 658
+    },
+    {
+      "code": "independent_trajectory_operation_ids",
+      "passed": 1,
+      "errors": 0,
+      "warnings": 0,
+      "total": 1
+    },
+    {
+      "code": "model_response_identity",
+      "passed": 1241,
+      "errors": 0,
+      "warnings": 0,
+      "total": 1241
+    },
+    {
+      "code": "model_visible_context",
+      "passed": 1252,
+      "errors": 0,
+      "warnings": 0,
+      "total": 1252
+    },
+    {
+      "code": "payload_model_route",
+      "passed": 1252,
+      "errors": 0,
+      "warnings": 0,
+      "total": 1252
+    },
+    {
+      "code": "phase_actual_request_budget",
+      "passed": 1,
+      "errors": 0,
+      "warnings": 0,
+      "total": 1
+    },
+    {
+      "code": "phase_maximum_request_budget",
+      "passed": 1,
+      "errors": 0,
+      "warnings": 0,
+      "total": 1
+    },
+    {
+      "code": "predictor_disk_saving",
+      "passed": 234,
+      "errors": 0,
+      "warnings": 0,
+      "total": 234
+    },
+    {
+      "code": "predictor_files_absent",
+      "passed": 234,
+      "errors": 0,
+      "warnings": 0,
+      "total": 234
+    },
+    {
+      "code": "project_output_limit_absent",
+      "passed": 1252,
+      "errors": 0,
+      "warnings": 0,
+      "total": 1252
+    },
+    {
+      "code": "proposals_from_saved_responses",
+      "passed": 626,
+      "errors": 0,
+      "warnings": 0,
+      "total": 626
+    },
+    {
+      "code": "public_round_number",
+      "passed": 658,
+      "errors": 0,
+      "warnings": 0,
+      "total": 658
+    },
+    {
+      "code": "public_selected_fitness",
+      "passed": 626,
+      "errors": 0,
+      "warnings": 0,
+      "total": 626
+    },
+    {
+      "code": "public_selected_variants",
+      "passed": 626,
+      "errors": 0,
+      "warnings": 0,
+      "total": 626
+    },
+    {
+      "code": "public_summary_counts",
+      "passed": 234,
+      "errors": 0,
+      "warnings": 0,
+      "total": 234
+    },
+    {
+      "code": "rebuilt_predictor_scores",
+      "passed": 626,
+      "errors": 0,
+      "warnings": 0,
+      "total": 626
+    },
+    {
+      "code": "recent_feedback_own_history",
+      "passed": 658,
+      "errors": 0,
+      "warnings": 0,
+      "total": 658
+    },
+    {
+      "code": "reproducible_unlabeled_cohort",
+      "passed": 658,
+      "errors": 0,
+      "warnings": 0,
+      "total": 658
+    },
+    {
+      "code": "request_context_snapshot",
+      "passed": 1252,
+      "errors": 0,
+      "warnings": 0,
+      "total": 1252
+    },
+    {
+      "code": "request_frame_identity",
+      "passed": 1252,
+      "errors": 0,
+      "warnings": 0,
+      "total": 1252
+    },
+    {
+      "code": "request_prompt_snapshot",
+      "passed": 1252,
+      "errors": 0,
+      "warnings": 0,
+      "total": 1252
+    },
+    {
+      "code": "request_snapshot_missing",
+      "passed": 1252,
+      "errors": 0,
+      "warnings": 0,
+      "total": 1252
+    },
+    {
+      "code": "response_snapshot",
+      "passed": 1241,
+      "errors": 0,
+      "warnings": 0,
+      "total": 1241
+    },
+    {
+      "code": "round_metric_cumulative_best",
+      "passed": 626,
+      "errors": 0,
+      "warnings": 0,
+      "total": 626
+    },
+    {
+      "code": "round_metric_max_fitness",
+      "passed": 626,
+      "errors": 0,
+      "warnings": 0,
+      "total": 626
+    },
+    {
+      "code": "round_metric_mean_fitness",
+      "passed": 626,
+      "errors": 0,
+      "warnings": 0,
+      "total": 626
+    },
+    {
+      "code": "round_request_budget",
+      "passed": 658,
+      "errors": 0,
+      "warnings": 0,
+      "total": 658
+    },
+    {
+      "code": "round_sequence",
+      "passed": 658,
+      "errors": 0,
+      "warnings": 0,
+      "total": 658
+    },
+    {
+      "code": "saved_scoring_count",
+      "passed": 626,
+      "errors": 0,
+      "warnings": 0,
+      "total": 626
+    },
+    {
+      "code": "saved_valid_proposal_count",
+      "passed": 1241,
+      "errors": 0,
+      "warnings": 0,
+      "total": 1241
+    },
+    {
+      "code": "scientific_events_missing",
+      "passed": 234,
+      "errors": 0,
+      "warnings": 0,
+      "total": 234
+    },
+    {
+      "code": "scored_candidate_budget_eligibility",
+      "passed": 626,
+      "errors": 0,
+      "warnings": 0,
+      "total": 626
+    },
+    {
+      "code": "scores_saved_before_selection",
+      "passed": 626,
+      "errors": 0,
+      "warnings": 0,
+      "total": 626
+    },
+    {
+      "code": "selected_before_measurement_feedback",
+      "passed": 626,
+      "errors": 0,
+      "warnings": 0,
+      "total": 626
+    },
+    {
+      "code": "selected_measurements_oracle",
+      "passed": 626,
+      "errors": 0,
+      "warnings": 0,
+      "total": 626
+    },
+    {
+      "code": "selected_measurements_original_source",
+      "passed": 626,
+      "errors": 0,
+      "warnings": 0,
+      "total": 626
+    },
+    {
+      "code": "selected_prediction_matches_scores",
+      "passed": 626,
+      "errors": 0,
+      "warnings": 0,
+      "total": 626
+    },
+    {
+      "code": "selected_sequence_description",
+      "passed": 6260,
+      "errors": 0,
+      "warnings": 0,
+      "total": 6260
+    },
+    {
+      "code": "selection_dataset_manifest",
+      "passed": 3,
+      "errors": 0,
+      "warnings": 0,
+      "total": 3
+    },
+    {
+      "code": "selection_event_has_no_measurements",
+      "passed": 626,
+      "errors": 0,
+      "warnings": 0,
+      "total": 626
+    },
+    {
+      "code": "shared_selection_parameters",
+      "passed": 234,
+      "errors": 0,
+      "warnings": 0,
+      "total": 234
+    },
+    {
+      "code": "top_k_ranking_no_repeats",
+      "passed": 626,
+      "errors": 0,
+      "warnings": 0,
+      "total": 626
+    },
+    {
+      "code": "training_ids_own_feedback",
+      "passed": 658,
+      "errors": 0,
+      "warnings": 0,
+      "total": 658
+    },
+    {
+      "code": "trajectory_call_budget",
+      "passed": 234,
+      "errors": 0,
+      "warnings": 0,
+      "total": 234
+    },
+    {
+      "code": "trajectory_frozen_dataset_selection",
+      "passed": 234,
+      "errors": 0,
+      "warnings": 0,
+      "total": 234
+    },
+    {
+      "code": "trajectory_scientific_parameters",
+      "passed": 234,
+      "errors": 0,
+      "warnings": 0,
+      "total": 234
+    },
+    {
+      "code": "transport_model_route",
+      "passed": 1252,
+      "errors": 0,
+      "warnings": 0,
+      "total": 1252
+    },
+    {
+      "code": "unknown_attempt_not_resent",
+      "passed": 11,
+      "errors": 0,
+      "warnings": 0,
+      "total": 11
+    },
+    {
+      "code": "validation_role_disjoint",
+      "passed": 3,
+      "errors": 0,
+      "warnings": 0,
+      "total": 3
+    },
+    {
+      "code": "worker_condition_identity",
+      "passed": 234,
+      "errors": 0,
+      "warnings": 0,
+      "total": 234
+    },
+    {
+      "code": "worker_frozen_config",
+      "passed": 234,
+      "errors": 0,
+      "warnings": 0,
+      "total": 234
+    }
+  ],
+  "checks": [],
+  "predictor_rebuilds": {
+    "initial": 3,
+    "feedback": 410
+  }
+}

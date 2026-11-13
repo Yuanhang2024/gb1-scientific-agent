@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ES2023", "DOM"],
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "verbatimModuleSyntax": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "allowImportingTsExtensions": true,
+    "sourceMap": false,
+    "declarationMap": false,
+    "resolveJsonModule": true,
+    "types": ["node"],
+    "paths": {
+      "@deepseek-ai/dsh-typert-protocol": ["./packages/_framework-protocol/types/index.d.ts"],
+      "dsh-gb1-scientific-agent": ["./packages/gb1/src/index.ts"],
+      "dsh-gb1-scientific-agent/types": ["./packages/gb1/src/contracts.ts"]
+    }
+  }
+}

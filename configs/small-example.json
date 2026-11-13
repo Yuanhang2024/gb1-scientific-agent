@@ -1,0 +1,18 @@
+{
+  "seed": 1234,
+  "rounds": 2,
+  "k": 5,
+  "train_size": 200,
+  "validation_size": 100,
+  "test_size": 100,
+  "pool_size": 200,
+  "score_budget": 20,
+  "proposal_count": 20,
+  "tree_estimators": 20,
+  "n_jobs": 1,
+  "llm_max_calls_per_round": 2,
+  "llm_max_output_tokens": null,
+  "llm_timeout": null,
+  "knowledge_path": "configs/knowledge.json",
+  "save_predictors": false
+}

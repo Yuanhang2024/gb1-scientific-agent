@@ -1,0 +1,5 @@
+seed,profile,method,method_status,evaluated_rounds,recommendation_count,request_count,response_count,request_status_counts,requested_count,raw_generated_count,unknown_raw_count_requests,accepted_valid_count,scored_count,mean_fitness,best_new_fitness,input_tokens,output_tokens,total_tokens,missing_usage_count
+11,v1,llm,completed,3,30,6,6,"{""partial"": 3, ""succeeded"": 3}",127,123,0,118,118,4.1346718816519665,6.0442371447,35011,17799,52810,0
+11,v3,llm,completed,3,30,4,4,"{""succeeded"": 3, ""underfilled"": 1}",121,121,0,120,120,4.200022924747047,7.55466318627,26485,12498,38983,0
+11,v1,knowledge,completed,3,30,6,6,"{""invalid"": 1, ""partial"": 2, ""succeeded"": 3}",178,149,0,90,90,1.2925661478605153,5.04459938766,39093,20164,59257,0
+11,v3,knowledge,completed,3,30,6,6,"{""succeeded"": 3, ""underfilled"": 3}",125,125,0,120,120,3.9979901483243,7.28233277004,43730,17236,60966,0

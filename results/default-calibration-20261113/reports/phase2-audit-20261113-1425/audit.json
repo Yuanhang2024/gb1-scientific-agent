@@ -1,0 +1,520 @@
+{
+  "passed": true,
+  "check_totals": {
+    "passed": 18742,
+    "errors": 0,
+    "warnings": 0,
+    "total": 18742
+  },
+  "check_counts": [
+    {
+      "code": "adapter_output_limit",
+      "passed": 516,
+      "errors": 0,
+      "warnings": 0,
+      "total": 516
+    },
+    {
+      "code": "analysis_completion",
+      "passed": 72,
+      "errors": 0,
+      "warnings": 0,
+      "total": 72
+    },
+    {
+      "code": "analysis_equal_seed_mean",
+      "passed": 12,
+      "errors": 0,
+      "warnings": 0,
+      "total": 12
+    },
+    {
+      "code": "analysis_profile_counts",
+      "passed": 12,
+      "errors": 0,
+      "warnings": 0,
+      "total": 12
+    },
+    {
+      "code": "analysis_profile_missing",
+      "passed": 12,
+      "errors": 0,
+      "warnings": 0,
+      "total": 12
+    },
+    {
+      "code": "analysis_resource_totals",
+      "passed": 72,
+      "errors": 0,
+      "warnings": 0,
+      "total": 72
+    },
+    {
+      "code": "analysis_trajectory_max",
+      "passed": 72,
+      "errors": 0,
+      "warnings": 0,
+      "total": 72
+    },
+    {
+      "code": "analysis_trajectory_mean",
+      "passed": 72,
+      "errors": 0,
+      "warnings": 0,
+      "total": 72
+    },
+    {
+      "code": "analysis_trajectory_missing",
+      "passed": 72,
+      "errors": 0,
+      "warnings": 0,
+      "total": 72
+    },
+    {
+      "code": "attempt_prompt_metadata",
+      "passed": 516,
+      "errors": 0,
+      "warnings": 0,
+      "total": 516
+    },
+    {
+      "code": "complete_public_request_payload",
+      "passed": 516,
+      "errors": 0,
+      "warnings": 0,
+      "total": 516
+    },
+    {
+      "code": "completed_round_count",
+      "passed": 72,
+      "errors": 0,
+      "warnings": 0,
+      "total": 72
+    },
+    {
+      "code": "effective_model_route",
+      "passed": 516,
+      "errors": 0,
+      "warnings": 0,
+      "total": 516
+    },
+    {
+      "code": "execution_condition_coverage",
+      "passed": 1,
+      "errors": 0,
+      "warnings": 0,
+      "total": 1
+    },
+    {
+      "code": "execution_condition_unchanged",
+      "passed": 72,
+      "errors": 0,
+      "warnings": 0,
+      "total": 72
+    },
+    {
+      "code": "frozen_prompt_metadata",
+      "passed": 72,
+      "errors": 0,
+      "warnings": 0,
+      "total": 72
+    },
+    {
+      "code": "generation_settings",
+      "passed": 72,
+      "errors": 0,
+      "warnings": 0,
+      "total": 72
+    },
+    {
+      "code": "host_call_numbers",
+      "passed": 72,
+      "errors": 0,
+      "warnings": 0,
+      "total": 72
+    },
+    {
+      "code": "host_calls_have_attempts",
+      "passed": 72,
+      "errors": 0,
+      "warnings": 0,
+      "total": 72
+    },
+    {
+      "code": "host_feedback_round_count",
+      "passed": 72,
+      "errors": 0,
+      "warnings": 0,
+      "total": 72
+    },
+    {
+      "code": "host_round_call_budget",
+      "passed": 72,
+      "errors": 0,
+      "warnings": 0,
+      "total": 72
+    },
+    {
+      "code": "host_usage_snapshot",
+      "passed": 516,
+      "errors": 0,
+      "warnings": 0,
+      "total": 516
+    },
+    {
+      "code": "incomplete_round_is_last",
+      "passed": 288,
+      "errors": 0,
+      "warnings": 0,
+      "total": 288
+    },
+    {
+      "code": "independent_trajectory_operation_ids",
+      "passed": 1,
+      "errors": 0,
+      "warnings": 0,
+      "total": 1
+    },
+    {
+      "code": "model_response_identity",
+      "passed": 516,
+      "errors": 0,
+      "warnings": 0,
+      "total": 516
+    },
+    {
+      "code": "model_visible_context",
+      "passed": 516,
+      "errors": 0,
+      "warnings": 0,
+      "total": 516
+    },
+    {
+      "code": "payload_model_route",
+      "passed": 516,
+      "errors": 0,
+      "warnings": 0,
+      "total": 516
+    },
+    {
+      "code": "phase_actual_request_budget",
+      "passed": 1,
+      "errors": 0,
+      "warnings": 0,
+      "total": 1
+    },
+    {
+      "code": "phase_maximum_request_budget",
+      "passed": 1,
+      "errors": 0,
+      "warnings": 0,
+      "total": 1
+    },
+    {
+      "code": "predictor_disk_saving",
+      "passed": 72,
+      "errors": 0,
+      "warnings": 0,
+      "total": 72
+    },
+    {
+      "code": "predictor_files_absent",
+      "passed": 72,
+      "errors": 0,
+      "warnings": 0,
+      "total": 72
+    },
+    {
+      "code": "project_output_limit_absent",
+      "passed": 516,
+      "errors": 0,
+      "warnings": 0,
+      "total": 516
+    },
+    {
+      "code": "proposals_from_saved_responses",
+      "passed": 288,
+      "errors": 0,
+      "warnings": 0,
+      "total": 288
+    },
+    {
+      "code": "public_round_number",
+      "passed": 288,
+      "errors": 0,
+      "warnings": 0,
+      "total": 288
+    },
+    {
+      "code": "public_selected_fitness",
+      "passed": 288,
+      "errors": 0,
+      "warnings": 0,
+      "total": 288
+    },
+    {
+      "code": "public_selected_variants",
+      "passed": 288,
+      "errors": 0,
+      "warnings": 0,
+      "total": 288
+    },
+    {
+      "code": "public_summary_counts",
+      "passed": 72,
+      "errors": 0,
+      "warnings": 0,
+      "total": 72
+    },
+    {
+      "code": "rebuilt_predictor_scores",
+      "passed": 288,
+      "errors": 0,
+      "warnings": 0,
+      "total": 288
+    },
+    {
+      "code": "recent_feedback_own_history",
+      "passed": 288,
+      "errors": 0,
+      "warnings": 0,
+      "total": 288
+    },
+    {
+      "code": "reproducible_unlabeled_cohort",
+      "passed": 288,
+      "errors": 0,
+      "warnings": 0,
+      "total": 288
+    },
+    {
+      "code": "request_context_snapshot",
+      "passed": 516,
+      "errors": 0,
+      "warnings": 0,
+      "total": 516
+    },
+    {
+      "code": "request_frame_identity",
+      "passed": 516,
+      "errors": 0,
+      "warnings": 0,
+      "total": 516
+    },
+    {
+      "code": "request_prompt_snapshot",
+      "passed": 516,
+      "errors": 0,
+      "warnings": 0,
+      "total": 516
+    },
+    {
+      "code": "request_snapshot_missing",
+      "passed": 516,
+      "errors": 0,
+      "warnings": 0,
+      "total": 516
+    },
+    {
+      "code": "response_snapshot",
+      "passed": 516,
+      "errors": 0,
+      "warnings": 0,
+      "total": 516
+    },
+    {
+      "code": "round_metric_cumulative_best",
+      "passed": 288,
+      "errors": 0,
+      "warnings": 0,
+      "total": 288
+    },
+    {
+      "code": "round_metric_max_fitness",
+      "passed": 288,
+      "errors": 0,
+      "warnings": 0,
+      "total": 288
+    },
+    {
+      "code": "round_metric_mean_fitness",
+      "passed": 288,
+      "errors": 0,
+      "warnings": 0,
+      "total": 288
+    },
+    {
+      "code": "round_request_budget",
+      "passed": 288,
+      "errors": 0,
+      "warnings": 0,
+      "total": 288
+    },
+    {
+      "code": "round_sequence",
+      "passed": 288,
+      "errors": 0,
+      "warnings": 0,
+      "total": 288
+    },
+    {
+      "code": "saved_scoring_count",
+      "passed": 288,
+      "errors": 0,
+      "warnings": 0,
+      "total": 288
+    },
+    {
+      "code": "saved_valid_proposal_count",
+      "passed": 516,
+      "errors": 0,
+      "warnings": 0,
+      "total": 516
+    },
+    {
+      "code": "scientific_events_missing",
+      "passed": 72,
+      "errors": 0,
+      "warnings": 0,
+      "total": 72
+    },
+    {
+      "code": "scored_candidate_budget_eligibility",
+      "passed": 288,
+      "errors": 0,
+      "warnings": 0,
+      "total": 288
+    },
+    {
+      "code": "scores_saved_before_selection",
+      "passed": 288,
+      "errors": 0,
+      "warnings": 0,
+      "total": 288
+    },
+    {
+      "code": "selected_before_measurement_feedback",
+      "passed": 288,
+      "errors": 0,
+      "warnings": 0,
+      "total": 288
+    },
+    {
+      "code": "selected_measurements_oracle",
+      "passed": 288,
+      "errors": 0,
+      "warnings": 0,
+      "total": 288
+    },
+    {
+      "code": "selected_measurements_original_source",
+      "passed": 288,
+      "errors": 0,
+      "warnings": 0,
+      "total": 288
+    },
+    {
+      "code": "selected_prediction_matches_scores",
+      "passed": 288,
+      "errors": 0,
+      "warnings": 0,
+      "total": 288
+    },
+    {
+      "code": "selected_sequence_description",
+      "passed": 2160,
+      "errors": 0,
+      "warnings": 0,
+      "total": 2160
+    },
+    {
+      "code": "selection_dataset_manifest",
+      "passed": 3,
+      "errors": 0,
+      "warnings": 0,
+      "total": 3
+    },
+    {
+      "code": "selection_event_has_no_measurements",
+      "passed": 288,
+      "errors": 0,
+      "warnings": 0,
+      "total": 288
+    },
+    {
+      "code": "shared_selection_parameters",
+      "passed": 72,
+      "errors": 0,
+      "warnings": 0,
+      "total": 72
+    },
+    {
+      "code": "top_k_ranking_no_repeats",
+      "passed": 288,
+      "errors": 0,
+      "warnings": 0,
+      "total": 288
+    },
+    {
+      "code": "training_ids_own_feedback",
+      "passed": 288,
+      "errors": 0,
+      "warnings": 0,
+      "total": 288
+    },
+    {
+      "code": "trajectory_call_budget",
+      "passed": 72,
+      "errors": 0,
+      "warnings": 0,
+      "total": 72
+    },
+    {
+      "code": "trajectory_frozen_dataset_selection",
+      "passed": 72,
+      "errors": 0,
+      "warnings": 0,
+      "total": 72
+    },
+    {
+      "code": "trajectory_scientific_parameters",
+      "passed": 72,
+      "errors": 0,
+      "warnings": 0,
+      "total": 72
+    },
+    {
+      "code": "transport_model_route",
+      "passed": 516,
+      "errors": 0,
+      "warnings": 0,
+      "total": 516
+    },
+    {
+      "code": "validation_role_disjoint",
+      "passed": 3,
+      "errors": 0,
+      "warnings": 0,
+      "total": 3
+    },
+    {
+      "code": "worker_condition_identity",
+      "passed": 72,
+      "errors": 0,
+      "warnings": 0,
+      "total": 72
+    },
+    {
+      "code": "worker_frozen_config",
+      "passed": 72,
+      "errors": 0,
+      "warnings": 0,
+      "total": 72
+    }
+  ],
+  "checks": [],
+  "predictor_rebuilds": {
+    "initial": 3,
+    "feedback": 216
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": { "module": "ESNext", "moduleResolution": "Bundler", "jsx": "react-jsx", "types": ["react"] },
+  "files": [],
+  "references": [{ "path": "./packages/gb1/tsconfig.client.json" }]
+}

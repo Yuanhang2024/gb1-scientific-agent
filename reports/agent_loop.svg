@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" font-family="'Microsoft YaHei','Segoe UI',sans-serif">
+  <defs>
+    <marker id="la" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><path d="M0,0L6,2.5L0,5Z" fill="#4A5568"/></marker>
+    <marker id="lo" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><path d="M0,0L6,2.5L0,5Z" fill="#C56A1B"/></marker>
+    <marker id="lg" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><path d="M0,0L6,2.5L0,5Z" fill="#2D7D46"/></marker>
+    <marker id="ly" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><path d="M0,0L6,2.5L0,5Z" fill="#8B6914"/></marker>
+    <marker id="lb" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto"><path d="M0,0L6,2.5L0,5Z" fill="#B8860B"/></marker>
+  </defs>
+  <rect width="1200" height="700" fill="#ffffff"/>
+  <text x="600" y="34" text-anchor="middle" font-size="18" font-weight="600" fill="#1a202c">LLM Agent 科学循环：假设 → 设计 → 评估 → 筛选</text>
+  <text x="600" y="56" text-anchor="middle" font-size="11" fill="#718096">上排：分析与生成（LLM 模块）· 下排：评分（纯代码）与审查 · 虚线为工具/数据注入</text>
+  <rect x="30" y="85" width="190" height="72" rx="3" fill="#FFFBEF" stroke="#B8860B" stroke-width="0.8"/>
+  <text x="125" y="109" text-anchor="middle" font-size="12" font-weight="600" fill="#8B6914">输入</text>
+  <text x="125" y="128" text-anchor="middle" font-size="10.5" fill="#2d3748">当前实验数据</text>
+  <text x="125" y="143" text-anchor="middle" font-size="10.5" fill="#2d3748">Top 变体 + fitness</text>
+  <rect x="270" y="85" width="190" height="72" rx="3" fill="#FFF8F0" stroke="#C56A1B" stroke-width="0.8"/>
+  <text x="365" y="109" text-anchor="middle" font-size="12" font-weight="600" fill="#8B4513">① Data Analyst</text>
+  <text x="365" y="128" text-anchor="middle" font-size="10.5" fill="#2d3748">位点统计 · 高分突变</text>
+  <rect x="510" y="85" width="190" height="72" rx="3" fill="#FFF8F0" stroke="#C56A1B" stroke-width="0.8"/>
+  <text x="605" y="109" text-anchor="middle" font-size="12" font-weight="600" fill="#8B4513">② Hypothesis Gen.</text>
+  <text x="605" y="128" text-anchor="middle" font-size="10.5" fill="#2d3748">提出有益位点假设</text>
+  <rect x="750" y="85" width="190" height="72" rx="3" fill="#FFF8F0" stroke="#C56A1B" stroke-width="0.8"/>
+  <text x="845" y="109" text-anchor="middle" font-size="12" font-weight="600" fill="#8B4513">③ Mutation Designer</text>
+  <text x="845" y="128" text-anchor="middle" font-size="10.5" fill="#2d3748">生成合法突变序列</text>
+  <line x1="222" y1="121" x2="266" y2="121" stroke="#4A5568" stroke-width="1" marker-end="url(#la)"/>
+  <line x1="462" y1="121" x2="506" y2="121" stroke="#4A5568" stroke-width="1" marker-end="url(#la)"/>
+  <line x1="702" y1="121" x2="746" y2="121" stroke="#4A5568" stroke-width="1" marker-end="url(#la)"/>
+  <path d="M 940,121 H 1060 V 440 H 946" fill="none" stroke="#4A5568" stroke-width="1" marker-end="url(#la)"/>
+  <rect x="750" y="440" width="190" height="72" rx="3" fill="#F4FCF4" stroke="#2D7D46" stroke-width="0.9"/>
+  <text x="845" y="464" text-anchor="middle" font-size="12" font-weight="600" fill="#1B5E20">④ Fitness Evaluator</text>
+  <text x="845" y="483" text-anchor="middle" font-size="10.5" fill="#2d3748">模型评分（纯代码）</text>
+  <text x="845" y="498" text-anchor="middle" font-size="9" fill="#718096" font-style="italic">调用预测器逐个打分</text>
+  <rect x="510" y="440" width="190" height="72" rx="3" fill="#FFF8F0" stroke="#C56A1B" stroke-width="0.8"/>
+  <text x="605" y="464" text-anchor="middle" font-size="12" font-weight="600" fill="#8B4513">⑤ Scientific Critic</text>
+  <text x="605" y="483" text-anchor="middle" font-size="10.5" fill="#2d3748">检查合理性 · 选 Top-k</text>
+  <text x="605" y="498" text-anchor="middle" font-size="9" fill="#718096" font-style="italic">解释并给出推荐理由</text>
+  <rect x="270" y="440" width="190" height="72" rx="3" fill="#FFFBEF" stroke="#B8860B" stroke-width="0.8"/>
+  <text x="365" y="464" text-anchor="middle" font-size="12" font-weight="600" fill="#8B6914">输出</text>
+  <text x="365" y="483" text-anchor="middle" font-size="10.5" fill="#2d3748">Top-10 推荐</text>
+  <text x="365" y="498" text-anchor="middle" font-size="10.5" fill="#2d3748">+ 每条推荐理由</text>
+  <line x1="746" y1="476" x2="706" y2="476" stroke="#4A5568" stroke-width="1" marker-end="url(#la)"/>
+  <line x1="506" y1="476" x2="466" y2="476" stroke="#4A5568" stroke-width="1" marker-end="url(#la)"/>
+  <path d="M 266,476 H 120 V 161" fill="none" stroke="#B8860B" stroke-width="0.8" stroke-dasharray="6,4" marker-end="url(#lb)"/>
+  <text x="103" y="320" text-anchor="middle" font-size="10" fill="#8B6914" font-style="italic" transform="rotate(-90 103 320)">下一轮反馈（虚拟实验回填）</text>
+  <rect x="450" y="230" width="300" height="88" rx="3" fill="#F5F0FF" stroke="#6B3FA0" stroke-width="1.2"/>
+  <text x="600" y="255" text-anchor="middle" font-size="13" font-weight="600" fill="#4A2080">LLM 引擎（chat API）</text>
+  <text x="600" y="275" text-anchor="middle" font-size="10.5" fill="#2d3748">JSON Schema 结构化输出</text>
+  <text x="600" y="292" text-anchor="middle" font-size="10.5" fill="#2d3748">Pydantic 本地校验</text>
+  <text x="600" y="309" text-anchor="middle" font-size="9.5" fill="#718096" font-style="italic">prompt + Python 函数调用编排，无框架依赖</text>
+  <line x1="365" y1="228" x2="365" y2="161" stroke="#C56A1B" stroke-width="0.6" stroke-dasharray="3,2" marker-end="url(#lo)"/>
+  <line x1="500" y1="228" x2="570" y2="161" stroke="#C56A1B" stroke-width="0.6" stroke-dasharray="3,2" marker-end="url(#lo)"/>
+  <line x1="700" y1="228" x2="810" y2="161" stroke="#C56A1B" stroke-width="0.6" stroke-dasharray="3,2" marker-end="url(#lo)"/>
+  <line x1="600" y1="322" x2="605" y2="436" stroke="#C56A1B" stroke-width="0.6" stroke-dasharray="3,2" marker-end="url(#lo)"/>
+  <rect x="150" y="238" width="200" height="72" rx="3" fill="#FEFCF0" stroke="#8B6914" stroke-width="0.8"/>
+  <text x="250" y="262" text-anchor="middle" font-size="12" font-weight="600" fill="#6B5010">知识规则库</text>
+  <text x="250" y="281" text-anchor="middle" font-size="10.5" fill="#2d3748">氨基酸性质 · 保守替换</text>
+  <text x="250" y="296" text-anchor="middle" font-size="10.5" fill="#2d3748">突变数限制 · 上位性提醒</text>
+  <line x1="352" y1="274" x2="446" y2="274" stroke="#8B6914" stroke-width="0.7" stroke-dasharray="3,2" marker-end="url(#ly)"/>
+  <rect x="850" y="238" width="180" height="72" rx="3" fill="#F4FCF4" stroke="#2D7D46" stroke-width="0.8"/>
+  <text x="940" y="262" text-anchor="middle" font-size="12" font-weight="600" fill="#1B5E20">适应度预测模型</text>
+  <text x="940" y="281" text-anchor="middle" font-size="10.5" fill="#2d3748">Random Forest</text>
+  <text x="940" y="296" text-anchor="middle" font-size="10.5" fill="#2d3748">one-hot + 回归</text>
+  <line x1="940" y1="312" x2="860" y2="436" stroke="#2D7D46" stroke-width="0.7" stroke-dasharray="3,2" marker-end="url(#lg)"/>
+  <rect x="450" y="560" width="300" height="26" rx="3" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="0.4"/>
+  <line x1="470" y1="573" x2="495" y2="573" stroke="#4A5568" stroke-width="1"/>
+  <text x="500" y="577" font-size="10" fill="#4A5568">控制流</text>
+  <line x1="560" y1="573" x2="585" y2="573" stroke="#C56A1B" stroke-width="0.6" stroke-dasharray="3,2"/>
+  <text x="590" y="577" font-size="10" fill="#4A5568">LLM 注入</text>
+  <line x1="660" y1="573" x2="685" y2="573" stroke="#B8860B" stroke-width="0.8" stroke-dasharray="6,4"/>
+  <text x="690" y="577" font-size="10" fill="#4A5568">迭代反馈</text>
+  <rect x="450" y="596" width="300" height="22" rx="3" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="0.4"/>
+  <rect x="470" y="602" width="12" height="10" fill="#FFF8F0" stroke="#C56A1B" stroke-width="0.4"/>
+  <text x="488" y="611" font-size="10" fill="#4A5568">LLM 模块</text>
+  <rect x="550" y="602" width="12" height="10" fill="#F4FCF4" stroke="#2D7D46" stroke-width="0.4"/>
+  <text x="568" y="611" font-size="10" fill="#4A5568">纯代码</text>
+  <rect x="630" y="602" width="12" height="10" fill="#FFFBEF" stroke="#B8860B" stroke-width="0.4"/>
+  <text x="648" y="611" font-size="10" fill="#4A5568">I/O</text>
+  <rect x="700" y="602" width="12" height="10" fill="#F5F0FF" stroke="#6B3FA0" stroke-width="0.4"/>
+  <text x="718" y="611" font-size="10" fill="#4A5568">LLM 引擎</text>
+</svg>

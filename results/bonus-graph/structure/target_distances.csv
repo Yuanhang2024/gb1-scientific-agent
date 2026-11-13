@@ -1,0 +1,7 @@
+position_a,position_b,ca_distance_angstrom,min_heavy_distance_angstrom,nonadjacent,contact_4.0,contact_4.5,contact_5.0
+39,40,3.788005646839788,1.3280249013990706,False,False,False,False
+39,41,6.392704145701332,4.180142733010847,True,False,True,True
+39,54,8.109420936752947,3.8099880805286945,True,True,True,True
+40,41,3.7969594270310663,1.3228162803047796,False,False,False,False
+40,54,7.7620806790901575,4.7798687506402775,True,False,False,True
+41,54,5.512603227519355,3.6697913660520225,True,True,True,True

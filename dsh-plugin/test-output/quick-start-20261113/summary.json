@@ -1,0 +1,165 @@
+{
+  "ok": true,
+  "checks": {
+    "recommendedModelAndEffort": true,
+    "budgetPreview": true,
+    "startReceipt": true,
+    "refreshDoesNotResubmit": true,
+    "quickCompleted": true,
+    "runVisible": true,
+    "publicAnalysisDuringRun": true,
+    "csv30Rows": true,
+    "mobileNoOverflow": true,
+    "singleSubmit": true,
+    "noPluginPageError": true,
+    "connectionUnchanged": true,
+    "sameOperationReturnsSameTask": true,
+    "oneNewRun": true,
+    "savedConfiguration": true,
+    "roundsAndTraining": true,
+    "callsWithinBudget": true,
+    "actualAndPredicted": true,
+    "reportedUsage": true,
+    "preparationReady": true,
+    "cacheReuse": true,
+    "dataValidated": true
+  },
+  "screenshots": [
+    "quick-ready.png",
+    "quick-preparing.png",
+    "quick-conversation.png",
+    "quick-results.png",
+    "quick-mobile.png"
+  ],
+  "quickTerminal": "completed",
+  "stream": {
+    "liveAnalysisSeen": true,
+    "liveTextChanges": 52,
+    "lastLength": 3919,
+    "maxRevision": 70
+  },
+  "csvRows": 30,
+  "phase": "complete",
+  "quickId": "quick-67c12a6f-f0c9-4ea8-b1e3-be0173b73f26",
+  "runId": "gb1-a367c6ad-5408-4d76-8403-499faba20735",
+  "quickStatus": "completed",
+  "steps": [
+    {
+      "stage": "model",
+      "status": "completed"
+    },
+    {
+      "stage": "python",
+      "status": "completed"
+    },
+    {
+      "stage": "venv",
+      "status": "completed"
+    },
+    {
+      "stage": "dependencies",
+      "status": "completed"
+    },
+    {
+      "stage": "validate",
+      "status": "completed"
+    },
+    {
+      "stage": "ready",
+      "status": "completed"
+    },
+    {
+      "stage": "starting-run",
+      "status": "completed"
+    },
+    {
+      "stage": "running",
+      "status": "completed"
+    }
+  ],
+  "requestCount": 4,
+  "usage": {
+    "inputTokens": 45465,
+    "outputTokens": 18533,
+    "totalTokens": 63998,
+    "missingUsageCount": 0
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "knownBefore": 2000,
+      "knownAfter": 2010,
+      "candidates": 40,
+      "scored": 40,
+      "selected": 10,
+      "calls": 1
+    },
+    {
+      "round": 2,
+      "knownBefore": 2010,
+      "knownAfter": 2020,
+      "candidates": 40,
+      "scored": 40,
+      "selected": 10,
+      "calls": 2
+    },
+    {
+      "round": 3,
+      "knownBefore": 2020,
+      "knownAfter": 2030,
+      "candidates": 40,
+      "scored": 40,
+      "selected": 10,
+      "calls": 1
+    }
+  ],
+  "preparation": {
+    "environmentReused": true,
+    "dependenciesReused": true,
+    "requiredPackages": 42,
+    "matchedPackages": 42,
+    "dataReused": true,
+    "variants": 149361,
+    "uniqueVariants": 149361,
+    "zeroFitness": 29477,
+    "steps": [
+      {
+        "stage": "python",
+        "status": "running"
+      },
+      {
+        "stage": "python",
+        "status": "completed"
+      },
+      {
+        "stage": "venv",
+        "status": "running"
+      },
+      {
+        "stage": "venv",
+        "status": "reused"
+      },
+      {
+        "stage": "dependencies",
+        "status": "running"
+      },
+      {
+        "stage": "dependencies",
+        "status": "reused"
+      },
+      {
+        "stage": "validate",
+        "status": "running"
+      },
+      {
+        "stage": "validate",
+        "status": "reused"
+      },
+      {
+        "stage": "ready",
+        "status": "completed"
+      }
+    ]
+  },
+  "processExitCode": 0
+}

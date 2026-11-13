@@ -1,0 +1,3 @@
+packages:
+  - packages/gb1
+autoInstallPeers: false

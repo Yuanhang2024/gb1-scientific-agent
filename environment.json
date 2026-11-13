@@ -1,0 +1,36 @@
+{
+  "python_version": "3.12.14",
+  "python_executable": "C:\\Users\\lijin\\.dsh\\dsh-runtimes\\dsh-primary-runtime\\dependencies\\python\\python.exe",
+  "platform": "Windows",
+  "virtual_environment": ".venv",
+  "installer": "pip",
+  "packages_in_requirements": 42,
+  "direct_packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "pydantic": "2.14.3",
+    "openai": "3.46.0",
+    "matplotlib": "3.11.2",
+    "pytest": "9.2.0",
+    "openpyxl": "3.1.5",
+    "joblib": "1.6.0",
+    "python-docx": "1.2.0",
+    "python-dotenv": "1.2.4"
+  },
+  "verification": {
+    "pip_check": "passed",
+    "imports": "passed",
+    "pandas_read_csv": "passed with an in-memory four-site variant table",
+    "scikit_learn_fit_predict": "passed with a small synthetic four-site feature matrix",
+    "pydantic_validation": "passed",
+    "matplotlib_render": "passed using Agg and an in-memory PNG buffer",
+    "joblib_round_trip": "passed using an in-memory buffer",
+    "openpyxl_workbook": "passed using an in-memory workbook",
+    "python_docx_document": "passed using an in-memory document",
+    "pytest": "imported; no test suite was run",
+    "openai_sdk": "imported only; no API request was sent",
+    "python_dotenv": "imported only; .env was not read"
+  }
+}

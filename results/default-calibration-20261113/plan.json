@@ -1,0 +1,68 @@
+{
+  "studyId": "gb1-default-calibration-20261113",
+  "task": "GB1 S1 four-site experimental fitness",
+  "scope": "Select practical defaults within the declared model/effort and candidate-budget search space, not a global optimum over all possible parameters.",
+  "method": "knowledge",
+  "promptProfile": "v3",
+  "initialData": {"train": 2000, "validation": 1000, "test": 5000},
+  "concurrency": 12,
+  "perProviderConcurrency": {"openai": 6, "zai-coding-cn": 4, "deepseek-account": 2},
+  "deliveryDeadline": "2026-11-13T08:00:00+08:00",
+  "stopNewDispatchAt": "2026-11-13T07:15:00+08:00",
+  "finalizeAt": "2026-11-13T07:30:00+08:00",
+  "deadlinePolicy": "Keep completed results and explicitly mark cancelled or unstarted work. Do not invent scores or declare an uncompleted validation successful.",
+  "projectOutputCap": null,
+  "generationTimeoutSeconds": null,
+  "maxCallsPerRound": 2,
+  "savePredictorSnapshots": false,
+  "sharedImmutablePreparedData": true,
+  "phase1": {
+    "purpose": "Measure data-split and independent-generation variability for all 26 registered model/effort combinations",
+    "dataSeeds": [101, 202, 303],
+    "repeatsPerSeed": 3,
+    "rounds": 3,
+    "candidatesPerRound": 40,
+    "topK": 10,
+    "oversizePolicy": "reject",
+    "expectedTrajectories": 234,
+    "maximumGenerationCalls": 1404,
+    "shortlist": {"distinctModels": 2, "minimumComplete": 8, "outOf": 9, "minimumCompletePerSeed": 2, "ranking": "Equal-weight mean of per-seed completed-run fitness; select best eligible effort per model, then the top two model families. If none meets reliability threshold, rank completion first and disclose this outcome."}
+  },
+  "phase2": {
+    "purpose": "Compare candidate budget, batch granularity and deterministic handling of excess proposals at the same 30-assay budget",
+    "dataSeeds": [404, 505, 606],
+    "repeatsPerSeed": 2,
+    "schedules": [
+      {"candidatesPerRound": 20, "topK": 5, "rounds": 6},
+      {"candidatesPerRound": 40, "topK": 10, "rounds": 3},
+      {"candidatesPerRound": 80, "topK": 10, "rounds": 3}
+    ],
+    "oversizePolicies": ["reject", "first_n"],
+    "queryCheckpoints": [10, 20, 30],
+    "maximumTrajectories": 72,
+    "maximumGenerationCalls": 576,
+    "selection": {"minimumComplete": 5, "outOf": 6, "minimumCompletePerSeed": 1, "qualityToleranceFraction": 0.05, "rule": "Among eligible profiles within 5% of the best equal-weight per-seed mean fitness, choose lowest median reported total tokens, then lowest median wall time. Missing usage cannot win a token comparison."}
+  },
+  "phase3": {
+    "purpose": "Independent confirmation of selected defaults against a fixed reference",
+    "dataSeeds": [707, 808, 909, 1010, 1111],
+    "repeatsPerSeed": 3,
+    "reference": {"provider": "openai", "model": "gpt-6-luna", "effort": "high", "candidatesPerRound": 40, "topK": 10, "rounds": 3, "oversizePolicy": "reject"},
+    "maximumTrajectories": 30,
+    "maximumGenerationCalls": 270,
+    "reliabilityTarget": {"minimumComplete": 14, "outOf": 15},
+    "bootstrap": {"seed": 20261113, "replicates": 10000, "confidenceLevel": 0.95, "outerUnit": "paired data split", "innerUnit": "independent trajectory within model and split"},
+    "applyRule": "Prefer a profile meeting the completion target; compare quality within the declared 5% practical band and then token/time use. If neither profile meets the target, apply the more reliable measured profile as provisional and disclose the unmet reliability target."
+  },
+  "overallMaximumGenerationCalls": 2250,
+  "controls": [
+    "Each repetition starts from initial training data and has unique run and operation identifiers; saved responses are not replayed into a new repetition.",
+    "Model-training randomness follows the fixed data seed unless explicitly recorded otherwise; LLM sampling seeds are not invented for providers that do not expose them.",
+    "The final held-out test labels never enter selection, candidate design or default tuning.",
+    "Failures and partial trajectories remain in the records; completion rate and conditional quality are reported separately.",
+    "Round checkpoints on one trajectory are dependent and are not treated as independent repetitions.",
+    "Unknown model-request outcomes are not automatically resubmitted.",
+    "Temperature and prompt/knowledge/context settings remain fixed within each phase.",
+    "Predictor candidate grids and data sizes are controlled settings, not claimed to be globally optimized by this study."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "python_version": "3.12.14",
+  "python_executable": "C:\\Users\\lijin\\.dsh\\dsh-runtimes\\dsh-primary-runtime\\dependencies\\python\\python.exe",
+  "platform": "Windows x86-64",
+  "virtual_environment": ".venv",
+  "base_requirements": "requirements.txt",
+  "bonus_requirements": "requirements-bonus.txt",
+  "installation": {
+    "command": "python -m pip install -c requirements.txt biopython==1.88 networkx==3.7",
+    "base_dependencies_upgraded": false,
+    "requirements_txt_modified": false,
+    "environment_json_modified": false
+  },
+  "package_metadata": {
+    "biopython": {
+      "version": "1.88",
+      "requires_python": ">=3.10",
+      "wheel": "cp312-cp312-win_amd64",
+      "release_date": "2026-08-06",
+      "requires": ["numpy"]
+    },
+    "networkx": {
+      "version": "3.7",
+      "requires_python": ">=3.12, !=3.14.1",
+      "wheel": "py3-none-any",
+      "release_date": "2026-09-21",
+      "hard_dependencies": []
+    }
+  },
+  "verification": {
+    "installed_versions": {
+      "biopython": "1.88",
+      "networkx": "3.7",
+      "numpy": "2.5.4"
+    },
+    "pip_check": "passed",
+    "biopython_import": "passed",
+    "sasa_smoke_test": "passed; one carbon alpha atom produced a finite positive structure SASA using ShrakeRupley(n_points=100)",
+    "networkx_import": "passed",
+    "node_link_json_round_trip": "passed; directed MultiDiGraph retained parallel evidence edges and their evidence_id attributes",
+    "api_requests_sent": false,
+    "environment_secrets_read": false
+  }
+}

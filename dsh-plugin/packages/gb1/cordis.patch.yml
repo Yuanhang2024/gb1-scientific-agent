@@ -1,0 +1,5 @@
+- insert:
+    - id: gb1-workbench
+      name: dsh-gb1-scientific-agent
+      config:
+        projectRoot: ""

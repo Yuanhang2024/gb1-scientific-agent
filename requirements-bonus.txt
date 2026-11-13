@@ -1,0 +1,3 @@
+-r requirements.txt
+biopython==1.88
+networkx==3.7

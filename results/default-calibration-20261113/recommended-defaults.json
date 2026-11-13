@@ -1,0 +1,81 @@
+{
+  "formatVersion": 1,
+  "config": {
+    "seed": 11,
+    "rounds": 3,
+    "k": 10,
+    "train_size": 2000,
+    "validation_size": 1000,
+    "test_size": 5000,
+    "pool_size": null,
+    "score_budget": 40,
+    "proposal_count": 40,
+    "summary_top": 15,
+    "contrast_examples": 4,
+    "feedback_rounds": 1,
+    "top_k_metric": 10,
+    "high_fitness_quantile": 0.9,
+    "ridge_alphas": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "tree_estimators": 100,
+    "tree_min_samples_leaf": [
+      1,
+      3
+    ],
+    "tree_max_depth": null,
+    "n_jobs": 4,
+    "model_families": [
+      "ridge",
+      "random_forest",
+      "extra_trees"
+    ],
+    "model_seed": null,
+    "design_seed": null,
+    "llm_max_calls_per_round": 2,
+    "llm_max_output_tokens": null,
+    "llm_timeout": null,
+    "llm_reasoning_effort": "xhigh",
+    "llm_temperature": null,
+    "llm_format": "json_schema",
+    "knowledge_path": "configs/knowledge.json",
+    "oversize_policy": "first_n",
+    "repair_examples": true,
+    "require_full_batch": false,
+    "analysis_max_chars": 5000,
+    "proposal_text_max_chars": 2000,
+    "allowed_positions": [
+      39,
+      40,
+      41,
+      54
+    ],
+    "allowed_amino_acids": "ACDEFGHIKLMNPQRSTVWY",
+    "min_mutations": 0,
+    "max_mutations": 4,
+    "max_assays": null,
+    "max_model_calls": null,
+    "max_reported_tokens": null,
+    "target_fitness": null,
+    "patience": null,
+    "min_improvement": 0,
+    "early_stop_metric": "best",
+    "save_predictors": false
+  },
+  "promptProfile": "v3",
+  "recommendedModel": {
+    "provider": "openai",
+    "model": "gpt-6.1-sol"
+  },
+  "evidence": {
+    "studyId": "gb1-default-calibration-20261113",
+    "selectedArm": "selected",
+    "provisional": false,
+    "phase3Audit": "results/default-calibration-20261113/reports/phase3-audit-20261113-final",
+    "selectionRule": "Completion target, 5% practical quality band, median reported tokens, median wall time.",
+    "appliedAt": "2026-11-13T07:02:46.472543+00:00",
+    "scope": "Measured model/effort and candidate-budget profiles; data split seed is not optimized."
+  }
+}

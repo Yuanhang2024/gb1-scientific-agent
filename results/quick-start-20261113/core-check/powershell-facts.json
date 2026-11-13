@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "powershell_version": "7.7.0",
+  "portable_runtime": true,
+  "system_path_changed": false,
+  "execution_policy_changed": false,
+  "modes": [
+    {
+      "mode": "-PrepareOnly",
+      "exit_code": 0,
+      "environment_reused": true,
+      "dependencies_reused": true,
+      "data_reused": true,
+      "experiment_started": false
+    },
+    {
+      "mode": "-Offline",
+      "exit_code": 0,
+      "environment_reused": true,
+      "dependencies_reused": true,
+      "data_reused": true,
+      "recommendation_rows": 20,
+      "llm_generations": 0,
+      "output_relative": "results\\quick-start\\cli-20261113T091725Z-ec6ae091"
+    }
+  ]
+}

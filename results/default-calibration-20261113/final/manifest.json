@@ -1,0 +1,17 @@
+{
+  "title": "独立确认：质量、耗时、Token与速度",
+  "width_mm": 180,
+  "height_mm": 133,
+  "quality": "Equal-weight mean per data split, 95% hierarchical bootstrap",
+  "resources": "Median across completed trajectories; null usage remains missing",
+  "files": [
+    "confirmation-four-metrics.pdf",
+    "confirmation-four-metrics.png",
+    "confirmation-four-metrics.svg",
+    "confirmation-quality-intervals.csv",
+    "confirmation-resource-medians.csv",
+    "confirmation-resources.csv",
+    "manifest.json"
+  ],
+  "sourceAudit": "reports/phase3-audit-20261113-final"
+}

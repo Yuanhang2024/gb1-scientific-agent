@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+.env.*
+!.env.example
+# Generated and downloaded data; retain only the public data audit.
+data/*
+!data/audit.json
+runs/
+*.joblib
+.dsh-gb1/
+.quick-start/
+dsh-plugin/node_modules/
+dsh-plugin/packages/*/node_modules/
+dsh-plugin/packages/*/lib/
+dsh-plugin/packages/*/lib-test/
+dsh-plugin/packages/_framework-protocol/

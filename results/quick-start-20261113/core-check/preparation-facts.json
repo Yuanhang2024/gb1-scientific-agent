@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "fresh_environment_created": true,
+  "fixed_requirements_installed": 42,
+  "official_download_bytes": 6633543,
+  "validated_variants": 149361,
+  "preserved_zeros": 29477,
+  "wild_type_is_one": true,
+  "clean_host_environment_without_home_variables": true,
+  "reuse_exit_code": 0,
+  "reuse_installed_dependencies": false,
+  "reuse_downloaded_data": false,
+  "source_file_unchanged": true,
+  "venv_interpreter_unchanged": true,
+  "llm_generations": 0
+}

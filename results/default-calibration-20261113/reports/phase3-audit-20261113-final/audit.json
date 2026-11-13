@@ -1,0 +1,527 @@
+{
+  "passed": true,
+  "check_totals": {
+    "passed": 6457,
+    "errors": 0,
+    "warnings": 0,
+    "total": 6457
+  },
+  "check_counts": [
+    {
+      "code": "adapter_output_limit",
+      "passed": 173,
+      "errors": 0,
+      "warnings": 0,
+      "total": 173
+    },
+    {
+      "code": "analysis_completion",
+      "passed": 30,
+      "errors": 0,
+      "warnings": 0,
+      "total": 30
+    },
+    {
+      "code": "analysis_equal_seed_mean",
+      "passed": 2,
+      "errors": 0,
+      "warnings": 0,
+      "total": 2
+    },
+    {
+      "code": "analysis_profile_counts",
+      "passed": 2,
+      "errors": 0,
+      "warnings": 0,
+      "total": 2
+    },
+    {
+      "code": "analysis_profile_missing",
+      "passed": 2,
+      "errors": 0,
+      "warnings": 0,
+      "total": 2
+    },
+    {
+      "code": "analysis_resource_totals",
+      "passed": 30,
+      "errors": 0,
+      "warnings": 0,
+      "total": 30
+    },
+    {
+      "code": "analysis_trajectory_max",
+      "passed": 30,
+      "errors": 0,
+      "warnings": 0,
+      "total": 30
+    },
+    {
+      "code": "analysis_trajectory_mean",
+      "passed": 30,
+      "errors": 0,
+      "warnings": 0,
+      "total": 30
+    },
+    {
+      "code": "analysis_trajectory_missing",
+      "passed": 30,
+      "errors": 0,
+      "warnings": 0,
+      "total": 30
+    },
+    {
+      "code": "attempt_prompt_metadata",
+      "passed": 173,
+      "errors": 0,
+      "warnings": 0,
+      "total": 173
+    },
+    {
+      "code": "complete_public_request_payload",
+      "passed": 173,
+      "errors": 0,
+      "warnings": 0,
+      "total": 173
+    },
+    {
+      "code": "completed_round_count",
+      "passed": 30,
+      "errors": 0,
+      "warnings": 0,
+      "total": 30
+    },
+    {
+      "code": "effective_model_route",
+      "passed": 173,
+      "errors": 0,
+      "warnings": 0,
+      "total": 173
+    },
+    {
+      "code": "execution_condition_coverage",
+      "passed": 1,
+      "errors": 0,
+      "warnings": 0,
+      "total": 1
+    },
+    {
+      "code": "execution_condition_unchanged",
+      "passed": 30,
+      "errors": 0,
+      "warnings": 0,
+      "total": 30
+    },
+    {
+      "code": "frozen_prompt_metadata",
+      "passed": 30,
+      "errors": 0,
+      "warnings": 0,
+      "total": 30
+    },
+    {
+      "code": "generation_settings",
+      "passed": 30,
+      "errors": 0,
+      "warnings": 0,
+      "total": 30
+    },
+    {
+      "code": "host_call_numbers",
+      "passed": 30,
+      "errors": 0,
+      "warnings": 0,
+      "total": 30
+    },
+    {
+      "code": "host_calls_have_attempts",
+      "passed": 30,
+      "errors": 0,
+      "warnings": 0,
+      "total": 30
+    },
+    {
+      "code": "host_feedback_round_count",
+      "passed": 30,
+      "errors": 0,
+      "warnings": 0,
+      "total": 30
+    },
+    {
+      "code": "host_round_call_budget",
+      "passed": 30,
+      "errors": 0,
+      "warnings": 0,
+      "total": 30
+    },
+    {
+      "code": "host_usage_snapshot",
+      "passed": 173,
+      "errors": 0,
+      "warnings": 0,
+      "total": 173
+    },
+    {
+      "code": "incomplete_round_is_last",
+      "passed": 90,
+      "errors": 0,
+      "warnings": 0,
+      "total": 90
+    },
+    {
+      "code": "independent_trajectory_operation_ids",
+      "passed": 1,
+      "errors": 0,
+      "warnings": 0,
+      "total": 1
+    },
+    {
+      "code": "model_response_identity",
+      "passed": 173,
+      "errors": 0,
+      "warnings": 0,
+      "total": 173
+    },
+    {
+      "code": "model_visible_context",
+      "passed": 173,
+      "errors": 0,
+      "warnings": 0,
+      "total": 173
+    },
+    {
+      "code": "payload_model_route",
+      "passed": 173,
+      "errors": 0,
+      "warnings": 0,
+      "total": 173
+    },
+    {
+      "code": "phase_actual_request_budget",
+      "passed": 1,
+      "errors": 0,
+      "warnings": 0,
+      "total": 1
+    },
+    {
+      "code": "phase_maximum_request_budget",
+      "passed": 1,
+      "errors": 0,
+      "warnings": 0,
+      "total": 1
+    },
+    {
+      "code": "predictor_disk_saving",
+      "passed": 30,
+      "errors": 0,
+      "warnings": 0,
+      "total": 30
+    },
+    {
+      "code": "predictor_files_absent",
+      "passed": 30,
+      "errors": 0,
+      "warnings": 0,
+      "total": 30
+    },
+    {
+      "code": "preset_confirmation_interval",
+      "passed": 9,
+      "errors": 0,
+      "warnings": 0,
+      "total": 9
+    },
+    {
+      "code": "project_output_limit_absent",
+      "passed": 173,
+      "errors": 0,
+      "warnings": 0,
+      "total": 173
+    },
+    {
+      "code": "proposals_from_saved_responses",
+      "passed": 90,
+      "errors": 0,
+      "warnings": 0,
+      "total": 90
+    },
+    {
+      "code": "public_round_number",
+      "passed": 90,
+      "errors": 0,
+      "warnings": 0,
+      "total": 90
+    },
+    {
+      "code": "public_selected_fitness",
+      "passed": 90,
+      "errors": 0,
+      "warnings": 0,
+      "total": 90
+    },
+    {
+      "code": "public_selected_variants",
+      "passed": 90,
+      "errors": 0,
+      "warnings": 0,
+      "total": 90
+    },
+    {
+      "code": "public_summary_counts",
+      "passed": 30,
+      "errors": 0,
+      "warnings": 0,
+      "total": 30
+    },
+    {
+      "code": "rebuilt_predictor_scores",
+      "passed": 90,
+      "errors": 0,
+      "warnings": 0,
+      "total": 90
+    },
+    {
+      "code": "recent_feedback_own_history",
+      "passed": 90,
+      "errors": 0,
+      "warnings": 0,
+      "total": 90
+    },
+    {
+      "code": "reproducible_unlabeled_cohort",
+      "passed": 90,
+      "errors": 0,
+      "warnings": 0,
+      "total": 90
+    },
+    {
+      "code": "request_context_snapshot",
+      "passed": 173,
+      "errors": 0,
+      "warnings": 0,
+      "total": 173
+    },
+    {
+      "code": "request_frame_identity",
+      "passed": 173,
+      "errors": 0,
+      "warnings": 0,
+      "total": 173
+    },
+    {
+      "code": "request_prompt_snapshot",
+      "passed": 173,
+      "errors": 0,
+      "warnings": 0,
+      "total": 173
+    },
+    {
+      "code": "request_snapshot_missing",
+      "passed": 173,
+      "errors": 0,
+      "warnings": 0,
+      "total": 173
+    },
+    {
+      "code": "response_snapshot",
+      "passed": 173,
+      "errors": 0,
+      "warnings": 0,
+      "total": 173
+    },
+    {
+      "code": "round_metric_cumulative_best",
+      "passed": 90,
+      "errors": 0,
+      "warnings": 0,
+      "total": 90
+    },
+    {
+      "code": "round_metric_max_fitness",
+      "passed": 90,
+      "errors": 0,
+      "warnings": 0,
+      "total": 90
+    },
+    {
+      "code": "round_metric_mean_fitness",
+      "passed": 90,
+      "errors": 0,
+      "warnings": 0,
+      "total": 90
+    },
+    {
+      "code": "round_request_budget",
+      "passed": 90,
+      "errors": 0,
+      "warnings": 0,
+      "total": 90
+    },
+    {
+      "code": "round_sequence",
+      "passed": 90,
+      "errors": 0,
+      "warnings": 0,
+      "total": 90
+    },
+    {
+      "code": "saved_scoring_count",
+      "passed": 90,
+      "errors": 0,
+      "warnings": 0,
+      "total": 90
+    },
+    {
+      "code": "saved_valid_proposal_count",
+      "passed": 173,
+      "errors": 0,
+      "warnings": 0,
+      "total": 173
+    },
+    {
+      "code": "scientific_events_missing",
+      "passed": 30,
+      "errors": 0,
+      "warnings": 0,
+      "total": 30
+    },
+    {
+      "code": "scored_candidate_budget_eligibility",
+      "passed": 90,
+      "errors": 0,
+      "warnings": 0,
+      "total": 90
+    },
+    {
+      "code": "scores_saved_before_selection",
+      "passed": 90,
+      "errors": 0,
+      "warnings": 0,
+      "total": 90
+    },
+    {
+      "code": "selected_before_measurement_feedback",
+      "passed": 90,
+      "errors": 0,
+      "warnings": 0,
+      "total": 90
+    },
+    {
+      "code": "selected_measurements_oracle",
+      "passed": 90,
+      "errors": 0,
+      "warnings": 0,
+      "total": 90
+    },
+    {
+      "code": "selected_measurements_original_source",
+      "passed": 90,
+      "errors": 0,
+      "warnings": 0,
+      "total": 90
+    },
+    {
+      "code": "selected_prediction_matches_scores",
+      "passed": 90,
+      "errors": 0,
+      "warnings": 0,
+      "total": 90
+    },
+    {
+      "code": "selected_sequence_description",
+      "passed": 900,
+      "errors": 0,
+      "warnings": 0,
+      "total": 900
+    },
+    {
+      "code": "selection_dataset_manifest",
+      "passed": 5,
+      "errors": 0,
+      "warnings": 0,
+      "total": 5
+    },
+    {
+      "code": "selection_event_has_no_measurements",
+      "passed": 90,
+      "errors": 0,
+      "warnings": 0,
+      "total": 90
+    },
+    {
+      "code": "shared_selection_parameters",
+      "passed": 30,
+      "errors": 0,
+      "warnings": 0,
+      "total": 30
+    },
+    {
+      "code": "top_k_ranking_no_repeats",
+      "passed": 90,
+      "errors": 0,
+      "warnings": 0,
+      "total": 90
+    },
+    {
+      "code": "training_ids_own_feedback",
+      "passed": 90,
+      "errors": 0,
+      "warnings": 0,
+      "total": 90
+    },
+    {
+      "code": "trajectory_call_budget",
+      "passed": 30,
+      "errors": 0,
+      "warnings": 0,
+      "total": 30
+    },
+    {
+      "code": "trajectory_frozen_dataset_selection",
+      "passed": 30,
+      "errors": 0,
+      "warnings": 0,
+      "total": 30
+    },
+    {
+      "code": "trajectory_scientific_parameters",
+      "passed": 30,
+      "errors": 0,
+      "warnings": 0,
+      "total": 30
+    },
+    {
+      "code": "transport_model_route",
+      "passed": 173,
+      "errors": 0,
+      "warnings": 0,
+      "total": 173
+    },
+    {
+      "code": "validation_role_disjoint",
+      "passed": 5,
+      "errors": 0,
+      "warnings": 0,
+      "total": 5
+    },
+    {
+      "code": "worker_condition_identity",
+      "passed": 30,
+      "errors": 0,
+      "warnings": 0,
+      "total": 30
+    },
+    {
+      "code": "worker_frozen_config",
+      "passed": 30,
+      "errors": 0,
+      "warnings": 0,
+      "total": 30
+    }
+  ],
+  "checks": [],
+  "predictor_rebuilds": {
+    "initial": 5,
+    "feedback": 60
+  }
+}

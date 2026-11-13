@@ -1,0 +1,191 @@
+{
+  "audit_version": 1,
+  "audit_date": "2026-11-09",
+  "dataset": {
+    "name": "GB1 four-site landscape, Wu et al. 2016 Supplementary file 1",
+    "paper": {
+      "title": "Adaptation in protein fitness landscapes is facilitated by indirect paths",
+      "authors": ["Nicholas C Wu", "Lei Dai", "C Anders Olson", "James O Lloyd-Smith", "Ren Sun"],
+      "journal": "eLife",
+      "year": 2016,
+      "doi": "10.7554/eLife.16965",
+      "article_url": "https://elifesciences.org/articles/16965",
+      "api_metadata_url": "https://api.elifesciences.org/articles/16965",
+      "license": "CC BY 4.0"
+    },
+    "raw_files": [
+      {
+        "filename": "elife-16965-supp1-v4.xlsx",
+        "role": "official Supplementary file 1, measured/profiled variant fitness table",
+        "url": "https://cdn.elifesciences.org/articles/16965/elife-16965-supp1-v4.xlsx",
+        "doi": "10.7554/eLife.16965.024"
+      },
+      {
+        "filename": "1PGA.pdb",
+        "role": "RCSB PDB structure file; chain A records reference domain sequence",
+        "url": "https://files.rcsb.org/view/1PGA.pdb",
+        "pdb_id": "1PGA"
+      },
+      {
+        "filename": "1PGA.fasta",
+        "role": "RCSB PDB official FASTA structural reference sequence for chain A; not the assay template",
+        "url": "https://www.rcsb.org/fasta/entry/1PGA",
+        "pdb_id": "1PGA"
+      },
+      {
+        "filename": "elife-16965-fig1-figsupp1-v4.jpg",
+        "role": "official Figure 1 supplement 1 image showing structural mapping and WT nucleotide-template translation",
+        "url": "https://iiif.elifesciences.org/lax/16965%2Felife-16965-fig1-figsupp1-v4.tif/full/full/0/default.jpg",
+        "article_api_metadata_url": "https://api.elifesciences.org/articles/16965"
+      }
+    ],
+    "excluded_imputed_file": {
+      "filename": "elife-16965-supp2-v4.xlsx",
+      "role": "official Supplementary file 2, imputed fitness values for missing variants",
+      "url": "https://cdn.elifesciences.org/articles/16965/elife-16965-supp2-v4.xlsx",
+      "doi": "10.7554/eLife.16965.025",
+      "downloaded": false,
+      "included_in_s1_audit": false
+    },
+    "assay": {
+      "target": "GB1 domain B1 binding to IgG-Fc, measured using mRNA display and sequencing selection",
+      "fitness_definition": "Fitness is relative to wild type (WT), for which Fitness=1; the paper derives scores from relative sequence frequencies before and after selection.",
+      "direction": "Higher Fitness is better within this assay.",
+      "theoretical_four_site_space": 160000,
+      "direct_profiled_values_reported_by_paper": 149361,
+      "paper_reported_missing_or_filtered_variants": 10639,
+      "imputation_policy": "Use Supplementary file 1 only for experiment-derived training/oracle values. Supplementary file 2 is explicitly imputed and was not downloaded or merged.",
+      "single_mutation_calibration": "The paper states that single-substitution fitness values were taken from Olson et al. 2014 due to higher sequencing coverage there and multiplied by 1.159, based on a linear fit with approximately zero intercept. These are experiment-based, cross-study-calibrated values, not a fresh remeasurement of each single mutant in Wu et al. 2016.",
+      "single_mutation_source": {
+        "title": "A comprehensive biophysical description of pairwise epistasis throughout an entire protein domain",
+        "authors": ["C Anders Olson", "Nicholas C Wu", "Ren Sun"],
+        "year": 2014,
+        "doi": "10.1016/j.cub.2014.09.072"
+      }
+    }
+  },
+  "workbook_audit": {
+    "filename": "elife-16965-supp1-v4.xlsx",
+    "sheet_names": ["Supplementary Dataset 1"],
+    "active_data_sheet": "Supplementary Dataset 1",
+    "headers": ["Variants", "HD", "Count input", "Count selected", "Fitness"],
+    "data_rows_excluding_header": 149361,
+    "unique_variants": 149361,
+    "duplicate_variant_rows": 0,
+    "missing_cells_by_column": {
+      "Variants": 0,
+      "HD": 0,
+      "Count input": 0,
+      "Count selected": 0,
+      "Fitness": 0
+    },
+    "non_numeric_cells_by_numeric_column": {
+      "HD": 0,
+      "Count input": 0,
+      "Count selected": 0,
+      "Fitness": 0
+    },
+    "negative_values_by_numeric_column": {
+      "HD": 0,
+      "Count input": 0,
+      "Count selected": 0,
+      "Fitness": 0
+    },
+    "invalid_variants": 0,
+    "variant_length_counts": {
+      "4": 149361
+    },
+    "standard_amino_acid_coverage_by_local_site": {
+      "39": "ACDEFGHIKLMNPQRSTVWY",
+      "40": "ACDEFGHIKLMNPQRSTVWY",
+      "41": "ACDEFGHIKLMNPQRSTVWY",
+      "54": "ACDEFGHIKLMNPQRSTVWY"
+    },
+    "HD_counts": {
+      "0": 1,
+      "1": 76,
+      "2": 2091,
+      "3": 26019,
+      "4": 121174
+    },
+    "HD_matches_hamming_distance_from_VDGV": {
+      "matching_rows": 149361,
+      "mismatching_rows": 0
+    },
+    "Fitness": {
+      "numeric_finite_values": 149361,
+      "zero_values": 29477,
+      "negative_values": 0,
+      "WT_value": 1
+    },
+    "Count input": {
+      "rows_below_10": 0
+    },
+    "WT_row": {
+      "Variants": "VDGV",
+      "HD": 0,
+      "Fitness": 1,
+      "Count input": 92735,
+      "Count selected": 338346,
+      "occurrences": 1
+    },
+    "audit_status": "All rows have a unique, valid four-residue variant, complete values in all five columns, and HD equal to the Hamming distance from VDGV."
+  },
+  "reference_sequence": {
+    "sequence_role": "Wu et al. 2016 assay WT GB1 B1-domain coding template, translated from Figure 1 supplement 1 panel B",
+    "sequence_source": "The figure caption identifies this as the WT nucleotide template and attributes it to Olson et al. 2014.",
+    "source_figure_filename": "elife-16965-fig1-figsupp1-v4.jpg",
+    "source_figure_url": "https://iiif.elifesciences.org/lax/16965%2Felife-16965-fig1-figsupp1-v4.tif/full/full/0/default.jpg",
+    "olson_2014_source": {
+      "title": "A comprehensive biophysical description of pairwise epistasis throughout an entire protein domain",
+      "authors": ["C Anders Olson", "Nicholas C Wu", "Ren Sun"],
+      "doi": "10.1016/j.cub.2014.09.072"
+    },
+    "sequence_length": 56,
+    "sequence": "MQYKLILNGKTLKGETTTEAVDAATAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+    "n_terminal_translation_check": {
+      "position_1": {"amino_acid": "M", "codon_shown": "ATG"},
+      "position_2": {"amino_acid": "Q", "codon_shown": "CAG"},
+      "upstream_sequence": "Figure shows a T7 promoter and 5-prime untranslated template sequence before the GB1 start codon ATG.",
+      "extra_translated_n_terminal_residue": false,
+      "indexing_conclusion": "The first translated Met is GB1-domain position 1; no extra amino-acid offset is applied."
+    },
+    "variant_code_order": [39, 40, 41, 54],
+    "wild_type_variant_code": "VDGV",
+    "reference_residues_at_variant_positions": {
+      "39": "V",
+      "40": "D",
+      "41": "G",
+      "54": "V"
+    },
+    "nucleotide_codons_shown_for_variable_sites": {
+      "39": "GTC",
+      "40": "GAC",
+      "41": "GGT",
+      "54": "GTT"
+    },
+    "mapping_note": "Use 1-based local positions in the 56-aa experimental GB1-domain template above. The S1 Variants field stores only the four amino acids in the order 39, 40, 41, 54. Reconstruct full-domain candidates from this MQY... template, replacing those four positions. The experimental template's residue 2 is Gln (Q), not Thr (T)."
+  },
+  "structural_reference": {
+    "pdb_id": "1PGA",
+    "pdb_title": "Two crystal structures of the B1 immunoglobulin-binding domain of streptococcal protein G and comparison with NMR",
+    "citation": "Gallagher T, Alexander P, Bryan P, Gilliland GL. Biochemistry. 1994;33:4721-4729. DOI: 10.1021/bi00181a032.",
+    "official_pdb_page": "https://www.rcsb.org/structure/1PGA",
+    "official_fasta_url": "https://www.rcsb.org/fasta/entry/1PGA",
+    "chain": "A",
+    "sequence_length": 56,
+    "sequence": "MTYKLILNGKTLKGETTTEAVDAATAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+    "sequence_source_verification": "The sequence parsed from chain A SEQRES records in the downloaded 1PGA.pdb exactly matches the downloaded 1PGA.fasta sequence.",
+    "role": "Structural position reference only. Wu et al. Figure 1 supplement 1 panel A uses 1PGA to locate the mutated sites. Its chain-A sequence has Thr at position 2, whereas the assay construct shown in panel B has Gln at position 2.",
+    "shared_variant_site_residues": {"39": "V", "40": "D", "41": "G", "54": "V"}
+  },
+  "processing_notes": {
+    "source_table_retained_unmodified": true,
+    "no_imputed_rows_added": true,
+    "no_high_fitness_variant_ranking_recorded": true,
+    "no_checksum_computed": true,
+    "workbook_read_method": "Python openpyxl, read-only mode, data_only=True",
+    "structural_sequence_validation_method": "Parse SEQRES records for chain A in 1PGA.pdb and compare to downloaded 1PGA.fasta; no sequence mismatch.",
+    "experimental_template_validation_method": "Read the official eLife Figure 1 supplement 1 panel B image. Its caption identifies the displayed WT nucleotide template as Olson et al. 2014; the displayed translated sequence starts Met-Gln and the first two shown codons are ATG-CAG. The full displayed 56-aa translation is recorded separately under reference_sequence."
+  }
+}
