@@ -2,6 +2,16 @@
 
 使用 GB1 四位点实验数据训练适应度模型，并比较随机推荐、模型推荐、LLM候选设计和知识增强候选设计。项目在 Windows / PowerShell 7 上运行；Python版本为3.12.14。当前DSH工作台版本为0.5.0，支持一键准备并运行、自定义实验参数、独立重复与批量比较。
 
+## 一键安装 DSH 插件
+
+本仓库自带 DSH（DeepSeek Harness 0.2.2-rc.1）交互插件。克隆仓库后在根目录执行：
+
+```powershell
+pwsh -NoProfile -File .\Install-DSH-Plugin.ps1
+```
+
+脚本会定位 `dsh` 命令行与 Node.js 24+ 工具链，在 `dsh-plugin` 目录安装依赖并构建插件，再把 `dsh-gb1-scientific-agent` 安装到独立 profile（默认 `gb1`）。完成后运行 `dsh --profile gb1` 启动，在插件设置中把 `projectRoot` 指向仓库根目录，即可在“蛋白质进化”页面一键准备并运行实验。默认位置未命中时可用 `-Profile`、`-Dsh`、`-Node` 参数显式指定。
+
 ## 从哪里开始
 
 最简方式是在DSH“蛋白质进化”页面点击顶部“一键准备并运行”：自动准备项目依赖、下载并校验GB1官方S1、训练模型，然后按推荐Sol-xhigh/C40/k10/3轮运行。已注册的DSH模型连接可直接复用。[一键启动说明](<一键启动.md>)同时提供[PowerShell 7入口](<Start-GB1.ps1>)，支持仅准备和不调用LLM的离线示例。
@@ -20,13 +30,17 @@
 
 ## 架构图
 
-![系统总架构](reports/architecture_overview.svg)
+![系统总架构](reports/architecture_overview.png)
 
-![Agent 科学循环](reports/agent_loop.svg)
+GB1 虚拟定向进化系统总览：数据准备 → 适应度预测器 → LLM 科学设计 → 虚拟评估 → 结果分析五步主流程；顶部知识规则库为可选注入，绿色虚线为新测量驱动的逐轮反馈回路。
 
-![适应度预测器架构](reports/predictor_architecture.svg)
+![Agent 科学循环](reports/agent_loop.png)
 
-三张图分别给出五层数据流（数据 → 适应度模型 → Agent → 虚拟进化 → 评估）、Agent 内部"假设—设计—评估—筛选"循环的模块关系，以及预测器从四位点 one-hot 特征、七配置同训同验到冻结选择与逐轮重训的完整路径；虚线为知识注入、工具调用与迭代反馈路径。
+科学 Agent 循环：LLM 负责 ①数据分析 ②假设形成 ③候选设计，Python 负责 ④候选校验 ⑤适应度评分 ⑥推荐筛选；⑦虚拟实验查询实测分数并回填已知数据，知识规则与执行预算作为先验和约束注入。
+
+![适应度预测器架构](reports/predictor_architecture.png)
+
+适应度预测器：面板 A 在训练/验证数据上比较 Ridge 与两种树集成并固定超参数；面板 B 按各方法新增实测反馈逐轮重新拟合并排序候选，独立最终测试集仅用于终期评价。
 
 ## 文件与用途
 
